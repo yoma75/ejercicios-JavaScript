@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <input type="number" id='numero1' placeholder="Numero 1"> <br><br>
+    <input type="number" id='numero2' placeholder="Numero 2"> <br><br>
+    <div>
+        <button onclick="sumar();">Suma</button> 
+        <button onclick="restar();">Resta</button> 
+        <button onclick="multiplicar();">Multiplicacion</button>
+        <button onclick="dividir();">Division</button>
+        <button onclick="borrar();">Borrar</button>
+    </div>
+    = <button style="height:30px;width:163px;margin-top:13px;"><span id="resultado"></span></button>
+    
+    <script>
+        function sumar() {
+            let numero1 = parseInt($('#numero1').val());
+            let numero2 = parseInt($('#numero2').val());
+            let suma = numero1 + numero2;            
+            $('#resultado').text(suma);
+        }
+
+        function restar() {
+            let numero1 = parseInt($('#numero1').val());
+            let numero2 = parseInt($('#numero2').val());
+            let resta = numero1 - numero2;
+            $('#resultado').text(resta);
+        }
+
+        function multiplicar() {
+            let numero1 = parseInt($('#numero1').val());
+            let numero2 = parseInt($('#numero2').val());
+            let multiplicar = numero1 * numero2;
+            $('#resultado').text(multiplicar);
+        }
+
+        function dividir() {
+            let numero1 = parseInt($('#numero1').val());
+            let numero2 = parseInt($('#numero2').val());
+            let division = numero1 / numero2;
+            $('#resultado').text(division);
+        }
+
+        function borrar() {
+            $('#resultado').text('');               
+        }
+    </script>
+    
+</body>
+</html>

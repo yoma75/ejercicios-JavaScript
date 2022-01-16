@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Entrada</title>
+</head>
+<body>
+   
+   <h2>Si eres mayor de 18 años puedes entrar</h2>
+   <h3>Si entras despues de las 2:00 AM no pagas, de lo contrario paga</h3>
+
+
+   <script>
+      let entrada = false;
+
+      const validarCliente = (hora) => {
+         let edad = parseInt(prompt('Cual es tu edad: '));
+         if (edad > 18) {
+            if (hora >= 2 && hora < 7 && entrada == false) {
+               alert('Puedes entrar gratis por que son mas de las 2:00 AM');
+               entrada = true;
+            } else {
+               alert(`Son las ${hora}:00 horas, pero tienes que pagar la entrada`);
+            }
+
+         } else {
+            alert('Eres menor de edad y no puedes pasar');
+         }
+      }
+
+      validarCliente(23);
+      validarCliente(0.2);
+      validarCliente(3);
+      
+   </script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuracion</title>
+</head>
+<body>
+
+    <h2>El separador de coma se utiliza para omitir valores en una matriz. Entonces, si desea omitir un elemento en una matriz, solo use una coma.</h2>
+
+    <script>
+        //             ,  a, ,  b
+        var [,a,,b] = [1, 2, 3, 4, 5, 6]
+        console.log(a); // 2
+        console.log(b); // 4  
+        
+        
+        // Saltemos el primer y tercer elemento de la lista.
+        //                ,      x,     ,      y
+        var [,x,,y] = ["Hello", "I" , "am", "Sarah"];
+        console.log(x);   // "I"
+        console.log(y);  // "Sarah"
+
+
+        // Asignar el resto de una matriz
+        // si queremos asignar parte de la matriz a variables y el resto de los elementos de una matriz a una variable en particular
+        var [greeting,...intro] = ["Hello", "I" , "am", "Sarah"];
+        console.log(greeting); // "Hello"
+        console.log(intro); // ["I", "am", "Sarah"]
+
+    </script>
+    
+</body>
+</html>

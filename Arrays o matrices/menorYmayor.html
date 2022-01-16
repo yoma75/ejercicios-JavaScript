@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Número menor y mayor</title>
+</head>
+<body>
+
+
+   <script>
+      let numeros = [39, 560, 2, 10, 984, 245];
+
+      const pequeño = (a, b) => {
+         return a < b ? a : b;
+      };
+
+      const minimo = (numeros) => {
+         let min = 100;
+         for (let x of numeros) {
+            min = pequeño(min, x);
+         }
+         return min;
+      };
+
+      // Mayor
+      const larger = (a, b) => {
+         return a > b ? a : b;
+      };
+
+      const maximo = (numeros) => {
+         let max = 0;
+         for (let z of numeros) {
+            max = larger(max, z);
+         }
+         return max;
+      }
+
+      console.log(numeros);
+      console.log(`Número menor: ${minimo(numeros)}`);
+      console.log(`Número mayor: ${maximo(numeros)}`);
+
+
+
+   </script>
+
+   
+</body>
+</html>

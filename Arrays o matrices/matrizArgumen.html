@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argumentos de la matriz</title>
+</head>
+<body>
+
+    <h2>Dados dos argumentos, devuelve una matriz que contiene estos dos argumentos.</h2>
+      
+        <p>devuelve(1, 2) ➞ [1, 2] </p>       
+        <p>devuelve(51, 21) ➞ [51, 21]</p>    
+        <p>devuelve(512124, 215) ➞ [512124, 215]</p>
+    
+    <script>
+        function devuelve(a, b) {            
+            return console.log([...arguments])
+        }
+
+        // Otra forma de resolver
+        // const result = [];
+        // result.push(a, b);
+        // return console.log(result);
+
+        devuelve(1, 2)
+        devuelve(51, 21)
+        devuelve(512124, 215)
+    </script>
+    
+</body>
+</html>

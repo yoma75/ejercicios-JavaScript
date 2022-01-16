@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fecha</title>
+    <style>
+        h1 { color: darkblue;}
+        li { list-style: circle; }
+        .list { list-style: square; }
+        #date { font-size:18px; font-weight: bold; color: crimson; }
+    </style>
+</head>
+
+<body>
+    <h1>Task Timeline</h1>
+    <p id="date"></p>
+      
+
+  <script>
+    let today = new Date();
+    let formatDate = today.toDateString(); // toDateString: quita la hora y la zona horaria
+    let selectElement = document.getElementById('date');
+    selectElement.innerHTML = formatDate;
+  </script>
+    
+</body>
+</html>

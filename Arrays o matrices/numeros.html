@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Numeros al reves</title>
+</head>
+<body>
+
+   <p>Introduzca un número entero (0 para terminar): 12 <br>
+      Introduzca un número entero (0 para terminar): -6 <br>
+      Introduzca un número entero (0 para terminar): 3 <br>
+      Introduzca un número entero (0 para terminar): 0 <br>      
+      Los números tecleados son: 3 -6 12 </p>
+   
+   <script>
+      let listaNumeros = [];
+
+      while (listaNumeros.length < 100) {
+         let numeros = parseInt(prompt('Introduzca un número entero (0 para terminar):'));
+         listaNumeros.push(numeros);
+         if (numeros == 0) {
+            listaNumeros.pop();
+            break;
+         }
+      }     
+      
+      console.log(listaNumeros);
+      console.log(listaNumeros.reverse());
+
+   </script>
+   
+</body>
+</html>

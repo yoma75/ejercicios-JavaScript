@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Número repetido</title>
+</head>
+<body>
+
+   <p>Programa que permita ingresar 10 números y determine cuantas veces aparece el mismo número, dicho número a buscar debe solicitarse al usuario.</p>
+
+   <script>
+      let listaNumeros = [];
+      let contador = 0;
+
+      while (listaNumeros.length < 10) {
+         let numero = parseInt(prompt('Ingrese un número:'));
+         listaNumeros.push(numero);
+      }
+
+      let buscarNumero = parseInt(prompt('Cuál número desea buscar:'));
+      
+      // recorrer array
+      for (const x of listaNumeros) {
+         if (x == buscarNumero) {
+            contador = contador + 1;
+         }
+      }
+
+      console.log(listaNumeros);
+      console.log(`El número ${buscarNumero} se repite ${contador} veces`);
+
+   </script>
+   
+</body>
+</html>

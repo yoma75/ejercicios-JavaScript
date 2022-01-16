@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparar cadenas</title>
+</head>
+<body>
+
+    <h2>Cree una función que tome dos cadenas como argumentos y devuelva true o false dependiendo de si el número total de caracteres en la primera cadena es igual al número total de caracteres en la segunda cadena.</h2>
+       
+    <p>comp("AB", "CD") ➞ true </p>       
+    <p>comp("ABC", "DE") ➞ false</p>        
+    <p>comp("hello", "edabit") ➞ false</p>
+    
+
+    <script>
+
+        comparar = (str1, str2) => {
+            return console.log(str1.length === str2.length)
+        }
+
+        comparar("AB", "CD")  // True
+        comparar("ABC", "DE")  // False
+        comparar("hello", "edabit")  // False
+        
+    </script>
+
+</body>
+</html>

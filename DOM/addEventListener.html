@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>addEventListener</title>
+   <style>
+      .parrafito{border:1px solid red; width:10%; padding:12px; text-align:center; cursor: pointer;}
+      span{color: rgb(250, 18, 65);}
+   </style>
+</head>
+
+<body>
+
+   <h1>Agregando escuchas para eventos con <span>addEventListener()</span>.</h1>
+
+   <div id='principal'>
+      <p class="parrafito">Hacer Clic</p>
+      <p>No puede hacer Clic</p>
+   </div>
+
+   <script>
+      const mostraralerta = () => {
+         alert('hizo clic!');
+      }
+      const hacerclic = () => {
+         let elemento = document.getElementsByTagName('p')[0];
+         elemento.addEventListener('click', mostraralerta);
+         // click: nombre del evento.
+         // mostraralerta: la funcion a ser ejecutada.         
+      }
+      window.addEventListener('load', hacerclic, false);
+
+   </script>
+
+</body>
+</html>

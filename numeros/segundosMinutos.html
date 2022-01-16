@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segundos y minutos</title>
+</head>
+<body>
+
+    <h2>Escribe una función que tome dos números enteros ( hours, minutes), los convierta en segundos y los sume.</h2>
+        
+    <p>convert(1, 3) ➞ 3780</p>        
+    <p>convert(2, 0) ➞ 7200 </p>       
+    <p>convert(0, 0) ➞ 0</p>
+
+
+    <script>
+        function segundos(horas, minutos) {
+            return console.log(`${((horas*60*60) + (minutos*60))}`)
+        }
+
+        segundos(1, 3)
+        segundos(2, 0)
+        segundos(0, 0)
+    </script>
+    
+</body>
+</html>

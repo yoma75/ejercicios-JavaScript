@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area de un triángulo</title>
+</head>
+<body>
+
+    <h2>
+        Escribe una función que tome la base y la altura de un triángulo y retorne su área.
+    </h2>
+
+    <p>El área de un triángulo es: (base * height) / 2</p>
+    <p>triArea(7, 4) ➞ 14</p>
+    <p>triArea(3, 2) ➞ 3</p>
+    <p>triArea(10, 10) ➞ 50</p>
+
+
+    <script>
+        const area = (base, altura) => {
+            return console.log(`La base es: ${base} y la altura: ${altura}, su área es: ${base * altura / 2}`)
+        }
+
+        area(7, 4)
+        area(3, 2)
+        area(10, 10)
+    </script>
+    
+</body>
+</html>

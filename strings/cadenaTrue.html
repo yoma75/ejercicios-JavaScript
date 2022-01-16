@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>True o False</title>
+</head>
+<body>
+
+    <h2>Mostrar true si la cadena esta vacia de lo contrario false</h2>
+    <p>vacia('')</p>
+    <p>vacia('Hola JavaScript')</p>
+
+
+    <script>
+
+        vacia = (palabra) => {   
+            let message = (palabra === '') ? `True` : `False`
+            console.log(message);
+
+            // if(palabra === '') {
+            //     return console.log('true')
+            // }
+            // else {
+            //     return console.log('false')
+            // }
+        }
+
+        vacia('')  // True
+        vacia('Hola JavaScript')  // False
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura de compra</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="text-center">Factura de compra</h1>
+        <div class="valores">
+            <label>Valor :</label>
+            <input type="number" class="form-control" id='numero1'>
+                   
+            <label  class="separar">Cantidad:</label>
+            <input type="number" class="form-control" id='numero2'>
+        </div>
+            
+        <div>
+            <button onclick="multiplicar();" id="sb">Subtotal</button>        
+            <button onclick="ivaa();" id="sb">+ IVA</button>         
+            <button onclick="totalPagar();" id="sb">Total a pagar</button>
+        </div>    
+
+            <!-- Resultados -->            
+            subtotal: <button id="subtotal"></button>
+            IVA: <button id="iva"></button>
+            Total a pagar: <button id="total"></button>        
+    <div>
+  
+    
+    <script src="factura.js"></script>    
+</body>
+</html>

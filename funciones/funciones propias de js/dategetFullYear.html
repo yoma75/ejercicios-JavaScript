@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edad actual</title>
+  <style>
+    h3{font-family:Arial, Helvetica, sans-serif; line-height: 29px;}
+  </style>
+</head>
+<body>
+
+  <h3>pida al usuario su año de nacimiento e imprima su edad actual en la consola con la frase "Tienes X años". Por ejemplo, asumiendo que el año actual es 2020 y el usuario ingresa 2000, el programa debe imprimir en la consola: Tienes 20 años</h3>
+
+
+  <script>
+    // Date().getFullYear(): consigue el año actual
+
+    const birthYear = parseInt(prompt('Cual es su año de nacimiento: '))
+    const yearActual = new Date().getFullYear()
+
+    console.log(`Usted tiene ${yearActual - birthYear} años`);
+
+  </script>
+  
+</body>
+</html>

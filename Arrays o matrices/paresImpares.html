@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pares e impares</title>
+</head>
+<body>
+
+   <h3>Tomar una lista de números enteros y devuelva dos listas ordenadas. La primera con los números pares y la segunda con los números impares</h3>
+
+
+   <script>
+      let listaNumeros = [];
+      let pares = [];
+      let impares = [];
+
+      while (listaNumeros.length < 10) {
+         let pedirNumero = parseInt(prompt('Digite un número:'));
+         listaNumeros.push(pedirNumero);
+      }
+
+      for (const x of listaNumeros) {
+         if (x % 2 == 0) {
+            pares.push(x);
+         } else {
+            impares.push(x);
+         }
+      }
+
+      console.log(listaNumeros);
+      console.log(`Pares: ${pares}`);
+      console.log(`Impares: ${impares.join(', ')}`);
+
+   </script>
+   
+</body>
+</html>

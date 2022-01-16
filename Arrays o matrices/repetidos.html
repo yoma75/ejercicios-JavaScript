@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repetidos</title>
+  <style>body{font-family: Verdana, Geneva, Tahoma, sans-serif;}</style>
+</head>
+<body>
+
+  <h3>Imprime la cantidad de unos (1) que haya en el arreglo:</h3>
+
+  <p>const nums = [1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1]</p>
+
+
+  <script>
+    let count = 0
+    const numbers = [1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1]
+
+    for (let x = 0; x < numbers.length; x++) {
+      if (numbers[x] == 1) {
+        count++;
+      }
+    }
+    console.log(`El número 1 esta repetido: ${count} veces`);      
+  </script>
+
+</body>
+</html>

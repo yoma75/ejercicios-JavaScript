@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecuacion</title>
+</head>
+<body>
+
+    <h2>Cree una función que tome una ecuación (p . Ej. "1+1") Y devuelva la respuesta</h2>
+
+    <p>La función <b style="color:red;">eval()</b> evalúa el código JavaScript representado como una cadena.</p>
+    <p>equation("1+1") ➞ 2</p>
+    <p>equation("7*4-2") ➞ 26</p>
+    <p>equation("1+1+1+1+1") ➞ 5</p>
+    
+
+    <script>
+        function equation(s) {
+            return console.log(eval(s));
+        }
+
+        equation("1+1")
+        equation("7*4-2")
+        equation("1+1+1+1+1")
+    </script>
+</body>
+</html>

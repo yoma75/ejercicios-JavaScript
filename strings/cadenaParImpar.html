@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadena Par e Impar</title>
+</head>
+<body>
+
+    <h2>Dada una cadena, devuelve true si su longitud es par o false si la longitud es impar.</h2>
+    <p>parImpar("apples")</p>
+    <p>parImpar('pears')</p>
+
+
+    <script>
+
+        parImpar = (s) => {
+            let long = s.length            
+            let respuesta = (long % 2 == 0) ? `Par = True` : `Impar = False`;
+            console.log(respuesta);
+
+            // if(long % 2 == 0) {
+            //     return console.log('Par = True')
+            // }
+            // else {
+            //     return console.log('Impar = False')
+            // }
+        }        
+
+        parImpar("apples")  // Par = True
+        parImpar('pears')  // Impar = False
+
+    </script>
+    
+</body>
+</html>

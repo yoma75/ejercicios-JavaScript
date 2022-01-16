@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La granja</title>
+</head>
+<body>
+
+    <h3>En este desafío, un granjero te pide que le digas cuántas patas se pueden contar entre todos sus animales. El agricultor cría tres especies:
+        <ul>
+            <li>chickens = 2 patas</li>
+            <li>cows = 4 patas</li>
+            <li>pigs = 4 patas</li>
+        </ul>
+        El granjero ha contado sus animales y te da un subtotal para cada especie. Tienes que implementar una función que devuelva el número total de patas de todos los animales.
+
+        <p>animals(2, 3, 5) ➞ 36</p>
+    </h3>
+
+    
+    <script>
+        const patas = (p, v, c) => {
+            const pollos = 2
+            const vacas = 4            
+            const duques = 4
+            let suma = ((p * pollos) + (v * vacas) + (c * duques))
+            return console.log(`El total es de: ${suma} patas`)
+        }
+
+        patas(2, 3, 5)
+        patas(1, 2, 3)
+        patas(5, 2, 8)
+    </script>   
+    
+</body>
+</html>

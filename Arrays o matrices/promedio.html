@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Suma y promedio</title>
+</head>
+<body>
+   
+   <h3>Programa que permita ingresar 5 números y calcular el promedio.</h3>
+
+
+   <script>
+      let listaNumeros = [];
+      let suma = 0;
+      let promedio = 0;
+
+      while (listaNumeros.length < 5) {
+         let numeritos = parseInt(prompt('Ingrese un número:'))
+         listaNumeros.push(numeritos);
+      }
+
+      for (const x of listaNumeros) {
+         suma = suma + x;
+         promedio = suma / listaNumeros.length;
+      }
+         
+      console.log(listaNumeros);
+      console.log(`La suma de todos los números del array es: ${suma}`);
+      console.log(`El promedio de todos los números del array es: ${promedio}`);
+
+
+   </script>
+
+</body>
+</html>

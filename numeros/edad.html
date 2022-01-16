@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edad en dias</title>
+</head>
+<body>
+
+    <h1>Pedir su edad y decir cuantos días de vida ha tenido en el último año cumplido.</h1>
+
+    <script>
+        function edadNumero() {
+            var dato = prompt('Digite su edad: ')
+            var numerito = dato * 365;
+            return document.write(`Tu edad es: ${dato} años y tienes ${numerito} dias de vida.`)
+        }
+        
+        edadNumero();
+    </script>
+    
+</body>
+</html>

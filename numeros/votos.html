@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteo de votos</title>
+</head>
+<body>
+
+    <h2>Dado un objeto que contiene recuentos de votos a favor y en contra, devuelva qué recuento de votos debe mostrarse. Esto se calcula restando el número de votos negativos de los votos positivos.</h2>
+
+    <p>conteoVotos({ a favor: 13, encontra: 0 }) ➞ 13</p>
+    <p>conteoVotos({ a favor: 2, encontra: 33 }) ➞ -31</p>
+    <p>conteoVotos({ a favor: 132, encontra: 132 }) ➞ 0</p>
+    
+    <script>
+        function conteoVotos(afavor, encontra) {            
+            return console.log(`${afavor - encontra} total de votos`)
+        }
+
+        conteoVotos(13, 0)
+        conteoVotos(2, 33)
+        conteoVotos(132, 132)
+
+    </script>
+
+</body>
+</html>

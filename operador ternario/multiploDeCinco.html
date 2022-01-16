@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplo de 5</title>
+</head>
+<body>
+
+  <h3>
+    Escribe un programa que le pida al usuario un número e imprima si es un múltiplo de 5 o no.
+    Si es múltiplo debe imprimir “Si, el número x es múltiplo 5”, de lo contrario debe imprimir “No, el número x no es múltiplo de 5
+  </h3>
+
+
+  <script>    
+
+    let num = parseFloat(prompt('Ingrese un número: '));
+
+    let message = (0 === (num % 5)) ? `Felicitaciones el número ${num} es multiplo de 5`:`El número ${num} no es multiplo de 5`;
+    console.log(message);
+
+  </script>
+  
+</body>
+</html>

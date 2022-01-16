@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perímetro rectángulo</title>
+</head>
+<body>
+
+    <h4>Hallar el perímetro de un rectángulo</h4>
+    <p>El perímetro es la suma de todos los lados</p>
+
+    <script>
+        function perimetro() {
+            var long = prompt('Digite la longitud del rectángulo: ')
+            var anch = prompt('Digite el ancho del rectángulo: ')
+            var resultado = ((long * 2) + (anch * 2))
+            return console.log(`El perimetro del rectángulo es de: ${resultado} cms.`)
+        }
+
+        perimetro()
+    </script>
+    
+</body>
+</html>
