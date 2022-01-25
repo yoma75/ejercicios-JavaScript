@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Por palabras</title>
+  <style>
+    body {font-family: Verdana, Geneva, Tahoma, sans-serif;}
+  </style>
+</head>
+
+<body>
+
+  <h2>Escribe un programa que le pida una frase al usuario e imprima cada palabra en una nueva línea.</h2>
+
+  <p>Por ejemplo:</p>
+  <p>Ingresa una frase> esta es una prueba</p>
+  <p>esta</p>
+  <p>es</p>
+  <p>una</p>
+  <p>prueba</p>
+
+
+  <script>
+
+    let frase = prompt('Digite la frase')
+    frase = frase.split(" ")
+    frase = frase.join('\n');
+    console.log(frase)
+
+  </script>
+
+</body>
+</html>
