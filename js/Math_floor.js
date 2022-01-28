@@ -1,4 +1,4 @@
-// CARPETA METODOS
+// CARPETA MÉTODOS
 
 // Math.floor: retorna un numero entero
 // (Math.random() * 10): escoge al azar un numero entre 0 a 10
