@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <title>slice método array</title>
+</head>
+
+<body>
+
+  <h2 class="m-3"><span class="text-danger">.slice(a, b): </span> extrae elementos de un array desde el indice 'a' hasta el indice 'b'. Si no existe 'b' lo hace desde 'a' hasta el final. Sino existe ni 'a' ni 'b' hace una copia del original.</h2>
+  <h3 class="m-3"><span class="text-primary">a</span>: índice de inicio, desde donde empieza.</h3>
+  <h3 class="m-3"><span class="text-primary">b</span>: número de elementos. (opcional)</h3>
+  
+
+  <script>
+
+    let numbers = [1,2,3,4,5,6];
+    let copiaNumbers = numbers.slice();
+    console.log(numbers);           // [1, 2, 3, 4, 5, 6]   
+    console.log(copiaNumbers);      // [1, 2, 3, 4, 5, 6]
+    
+    let copiaNumbers2 = numbers.slice(2);  // desde index 2 crea un nuevo array
+    console.log(copiaNumbers2);            // [3, 4, 5, 6]
+    
+    let copiaNumbers3 = numbers.slice(2,5);  // extrae desde el index 2 hasta el index 5, el último no se incluye
+    console.log(copiaNumbers3);              // [3, 4, 5]
+
+  </script>
+
+</body>
+</html>

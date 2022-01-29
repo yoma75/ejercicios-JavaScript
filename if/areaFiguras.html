@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+    />
+    <title>Area figuras</title>
+  </head>
+
+  <body>
+    <h2 class="m-3">
+      Escribe un programa que pueda calcular el área de 3 figuras geométricas,
+      triángulo, rectángulo y círculo. En primer lugar pregunta de qué figura se
+      quiere calcular el área, después solicita los datos que necesites para
+      calcularlo. 
+      triángulo = b * h/2 
+      rectángulo = b * h 
+      círculo = π * r2
+    </h2>
+
+    <script>
+
+      console.log("A cuál figura le desea calcular su área:".toUpperCase());
+      console.log("1. Triángulo");
+      console.log("2. Rectángulo");
+      console.log("3. Círculo");
+      let opc = parseInt(prompt("Digite el número de la figura: "));
+
+      let base;
+      let altura;
+      let radio;
+
+      if (opc == 1) {
+        base = parseFloat(prompt("Digite la base del triángulo: "));
+        altura = parseFloat(prompt("Digite la altura del triángulo: "));
+        console.log(`El área del triángulo es: ${(base * altura) / 2}`);
+      } 
+      else if (opc == 2) {
+        base = parseFloat(prompt("Digite la base del rectángulo: "));
+        altura = parseFloat(prompt("Digite la altura del rectángulo: "));
+        console.log(`El área del rectángulo es: ${base * altura}`);
+      } 
+      else if (opc == 3) {
+        radio = parseFloat(prompt("Digite el radio del círculo: "));
+        console.log(`El área del círculo es ${Math.PI * Math.pow(radio,2)}`);
+      }
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <title>Decir si es par / impar</title>
+</head>
+
+<body>
+
+  <h2 class="m-3">Solicita un número e imprime todos los números pares e impares desde 1 hasta ese número con el mensaje
+    "es par" o "es impar"
+    <p>1 - impar</p>
+    <p>2 - par</p>
+    <p>3 - impar</p>
+    <p>4 - par</p>
+    <p>5 - impar</p>
+  </h2>
+
+  <script>
+
+    let numero = prompt('Hasta que número desea ver la lista: ')
+
+    for (let i = 1; i <= numero; i++) {
+      let mensaje = (i % 2 == 0) ? `${i} - par`:`${i} - impar`
+        console.log(mensaje);
+      }       
+
+  </script>
+
+</body>
+</html>

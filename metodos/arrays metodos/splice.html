@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <title>splice método array</title>
+</head>
+
+<body>
+
+  <h2 class="m-3"><span class="text-danger">.splice(a, b, items): </span> cambia el contenido de un array eliminando elementos existentes y/o agregando nuevos elementos.</h2>
+  <h3 class="m-3"><span class="text-primary">a</span>: índice de inicio, desde donde empieza.</h3>
+  <h3 class="m-3"><span class="text-primary">b</span>: número de elementos. (opcional)</h3>
+  <h3 class="m-3"><span class="text-primary">items</span>: elementos a añadir en el caso de que se añadan. (opcional)</h3>
+
+  <script>
+
+    let numbers = [1,2,3,4,5];
+    console.log(numbers);             // [1, 2, 3, 4, 5]     
+    console.log(numbers.splice(3));   // [4, 5] elimina desde el index 3 hasta el final
+    console.log(numbers);             // [1, 2, 3]
+
+
+    let numeros = [7, 8, 9, 10, 11, 12]
+    console.log(`\n${numeros}`);        // [7, 8, 9, 10, 11, 12]
+    console.log(numeros.splice(2,3));   // [9, 10, 11] empieza en el index 2, elimina 3 elementos
+    console.log(numeros);               // [7, 8, 12]
+
+
+    let vocales = ['a', 'e', 'i', 'o', 'u'];
+    console.log(`\n${vocales}`);              // ['a', 'e', 'i', 'o', 'u'] 
+    console.log(vocales.splice(2,2,'x','h'))  // ['i', 'o'] empieza en el index 2, elimina dos elementos y añade "x, h"
+    console.log(vocales);                     // ['a', 'e', 'x', 'h', 'u']  
+
+
+    let numeros2 = [10, 11, 12, 13, 14];
+    console.log(`\n${numeros2}`);               // [10, 11, 12, 13, 14]
+    console.log(numeros2.splice(2,0,951,305));  // añade desde el index 2, no elimina ningún valor y añade el resto
+    console.log(numeros2);                      // [10, 11, 951, 305, 12, 13, 14]
+
+  </script>
+
+</body>
+</html>

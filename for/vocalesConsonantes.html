@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <title>Vocales y Consonantes</title>
+</head>
+
+<body>
+
+  <h2 class="m-3">Solicitar al usuario una palabra y mostrar por consola el número de consonantes, vocales y longitud de
+    la palabra.</h2>
+
+  <script>
+
+    const palabra = prompt('Introduce una palabra: ').toLowerCase()
+
+    let consonantes = 0
+    let vocales = 0
+
+    for (const letra of palabra) {
+      if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u') vocales++
+      else consonantes++
+    }
+
+    console.log(`La palabra "${palabra}" tiene ${vocales} vocales, ${consonantes} consonantes y tiene un total de ${palabra.length} letras.`);
+
+  </script>
+
+</body>
+</html>
