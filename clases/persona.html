@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <title>Clase persona</title>
+</head>
+
+<body>
+
+  <h2 class="m-3"><span class="text-danger">Clase persona</span> </h2>
+  
+
+  <script>
+
+    class Persona {
+      constructor(nombre, apellido, edad) {
+        this.nombre = nombre
+        this.apellido = apellido
+        this.edad = edad
+
+        // no lleva "this" (this.nombre) porque esta dentro de la clase
+        this.datos = `Me llamo ${nombre} ${apellido} y tengo ${edad} años.` 
+      }
+
+      // Funcion conocida como métodos
+      saludar() {
+        return `Hola mi nombre es: ${this.nombre} y tengo ${this.edad} años.` 
+      }
+    }  
+    
+    // Crear o INSTANCIAR un objeto
+    const juan = new Persona('Juan', 'Sanchez', 54);
+    const henry = new Persona('Henry', 'Garcia', 63);
+
+    console.log(juan);
+    console.log(juan.saludar());
+    console.log(henry.saludar());
+
+  </script>
+
+</body>
+</html>

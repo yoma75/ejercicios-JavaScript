@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <title>for of / for in</title>
+</head>
+
+<body>
+
+  <h2 class="m-3"><span class="text-danger">for of</span> : recorre el array.</h2>
+  <h2 class="m-3"><span class="text-danger">for in</span> : muestra el index de cada elemento en el array.</h2>
+  <h2 class="m-3"><span class="text-danger">for in</span> : en los objetos muestra las claves.</h2>
+
+  <script>
+
+    let ciudades = ['Barranquilla', 'Manizales', 'Bogota', 'Villavicencio', 'Cali'];
+
+    // Recorre el array
+    for (const ciudad of ciudades) {
+      console.log(ciudad);
+    }
+
+    // Muestra el index
+    for (const ciudad in ciudades) {
+      console.log(ciudad);
+    }    
+
+    // objeto persona, clave : valor, (Key : value)
+    const persona = {
+      name: 'Juan',
+      age: 45,
+      sons: ['Laura', 'Diego']
+    }
+
+    // Muestra las claves del objeto persona
+    for (const key in persona) {
+      console.log(key);  // name, age, sons
+    }
+
+    // Muestra los valores del objeto persona
+    for (const key in persona) {
+      console.log(persona[key]);  // Juan, 45, ['Laura', 'Diego']
+    }
+
+    // Recorrer el array de sons
+    for (const son of persona.sons) {
+      console.log(son);  // Laura, Diego
+    }
+
+    // Mostrar el objeto en un mensaje
+    console.log(`Hola soy ${persona.name} tengo ${persona.age} años y mis hijos son: ${persona.sons.join(' y ')}`);
+    // Hola soy Juan tengo 45 años y mis hijos son: Laura y Diego
+
+  </script>
+
+</body>
+</html>
