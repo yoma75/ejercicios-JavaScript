@@ -38,10 +38,79 @@
         this.genero = genero
       }
 
+
+      // método que devuelva el autor
+      getAutor() {
+        return this.autor
+      }      
+
+      //  método que devuelve el género
+      getGenero() {
+        return this.genero
+      }
+
+      // método que devuelve toda la información del libro
       bookInfo() {
-        return ``
+        return `${this.titulo} es un libro de ${this.genero} escrito por ${this.autor} en el año ${this.year}`
       }
     }
+
+
+    // Pedir 3 libros y guardarlos en un array
+    let books = []
+
+    while (books.length < 3) {
+      let titulo = prompt('Introduce el título del libro: ')
+      let autor = prompt('Introduce el autor del libro: ')
+      let year = prompt('Introduce el año del libro: ')
+      let genero = prompt('Introduce el género del libro: ').toLowerCase()
+
+      // Validar que los campos no se introduzcan vacíos y Validar que el año sea un numero y tenga 4 dígitos.
+      if (titulo != '' 
+          && autor != '' 
+          && !isNaN(year) && year.length == 4 
+          && (genero == 'aventura') || genero == 'terror' || genero == 'fantasia') {
+          
+          // Si el if se cumple se mete el elemento en el array
+          // Los objetos se crean con el operador 'new'
+          books.push(new Book(titulo, autor, year, genero))  
+      }
+    }
+
+
+    // funcion que muestre todos los libros
+    const showAllBooks = () => {
+      console.log(books);
+    }
+
+
+    // funcion que muestre todos los autores ordenados alfabeticamente
+    const showAutores = () => {
+      let autores = []
+
+      for (const book of books) {
+        autores.push(book.getAutor())  // getAutor método creado en la clase
+      }
+            
+      console.log(`Autores ordenados alfabeticamente: ${autores.sort()}`);  
+    }
+
+
+    // funcion que pida un género y muestre la información de los libros que pertenezcan a ese género
+    const showGenero = () => {
+      const buscarGenero = prompt('Cual es el género a buscar: ').toUpperCase()
+
+      for (const book of books) {
+        if (book.getGenero() == buscarGenero) {
+          console.log(book.bookInfo());
+        }
+      }
+    }
+
+    // llamar funciones para ejecutarlas
+    showAllBooks()  
+    showAutores()
+    showGenero()
 
   </script>
 
