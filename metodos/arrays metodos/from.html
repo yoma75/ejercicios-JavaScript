@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <title>from método array</title>
+</head>
+
+<body>
+
+  <h2 class="m-3"><span class="text-danger">.from(iterable): </span> convierte en array el elemento iterable = (es todo aquel que se puede recorrer, ejemplo: un string)</h2>
+
+  <script>
+
+    let animal = 'un perro grande';
+    console.log(Array.from(animal));  // ['u', 'n', ' ', 'p', 'e', 'r', 'r', 'o', ' ', 'g', 'r', 'a', 'n', 'd', 'e']
+    console.log(animal.split(' '));  // ['un', 'perro', 'grande']
+
+  </script>
+
+</body>
+</html>

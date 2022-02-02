@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <title>map método array</title>
+</head>
+
+<body>
+
+  <h2 class="m-3"><span class="text-danger">.map(callback): </span>transforma todos los elementos del array y devuelve un nuevo array. </h2>
+
+  <script>
+
+    let numeros = [10, 20, 30, 40, 50]
+    numeros.map((element) => console.log(element * 2));  // 20,40,60,80,100
+
+    let multiplica = numeros.map(element => element * 2);  
+    console.log(multiplica);  // [20, 40, 60, 80, 100]
+
+  </script>
+
+</body>
+</html>

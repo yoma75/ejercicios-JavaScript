@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <title>forEach método array</title>
+</head>
+
+<body>
+
+  <h2 class="m-3"><span class="text-danger">.forEach(callback(currentValue), [index])): </span> ejecuta la función indicada una vez por cada elemento del array.</h2>
+  <h3 class="m-3"><span class="text-primary">currentValue</span> : valor actual</h3>
+
+  <script>
+
+    let numeros = [45, 98, 75, 25, 89]
+    numeros.forEach((elemento)=>console.log(elemento));  // [45, 98, 75, 25, 89], es mas sencillo que un 'for of'
+    
+
+    numeros.forEach((elemento, index)=>console.log(`${elemento} esta en la posición ${index}`));  
+    //  45 esta en la posición 0
+    //  98 esta en la posición 1
+    //  75 esta en la posición 2
+    //  25 esta en la posición 3
+    //  89 esta en la posición 4
+
+  </script>
+
+</body>
+</html>

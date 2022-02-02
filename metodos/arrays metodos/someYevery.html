@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <title>some y every método array</title>
+</head>
+
+<body>
+
+  <h2 class="m-3"><span class="text-danger">.some(callback): </span> comprueba si al menos un elemento del array cumple la condición. Devuelve True o False</h2>
+  <h2 class="m-3"><span class="text-primary">.every(callback)</span> : comprueba si todos los elementos del array cumplen la condicion.</h2>
+
+  <script>
+
+    const paises = ['China', 'Corea', 'Colombia']
+    console.log(paises.some(elemento => elemento.length > 2));  // true, si el string tiene mas de 2 carácteres
+    console.log(paises.some(elemento => elemento.length > 10));  // false, ninguno tiene mas de 10 letras
+    
+    console.log(paises.every(elemento => elemento.length > 3));  // true, tiene mas de 3 caracteres cada elemento
+
+  </script>
+
+</body>
+</html>
