@@ -16,7 +16,7 @@
 
   <script>
     
-    // enviar elementos en un array a una función
+    // enviar elementos de un array a una función
     const addNumbers = (a,b,c) => {
       console.log(a+b+c);  // 6
     }
@@ -32,10 +32,35 @@
     console.log(vocales);  // ['a', 'e', 'i', 'o', 'u', 74, 98, 39, 12, 47]
 
 
+    // Copiar array
+    let autos = ['Renault', 'Mazda', 'BMW']
+    let copiaAutos = [...autos]
+    console.log(autos);  // ['Renault', 'Mazda', 'BMW']
+
     
+    // Concatenar arrays
+    let numeros1 = [951, 753, 654, 102]
+    let numeros2 = [1, 5, 7]
+    console.log([...numeros1, ...numeros2]);  // [951, 753, 654, 102, 1, 5, 7]
 
 
-    
+    // Enviar un número indefinido de argumentos a una función (parámetros REST)
+    const parametros = (...numeros) => {
+      console.log(numeros);  // [12, 4, 987, 302]
+    }
+
+    parametros(12, 4, 987, 302)
+
+
+    // Librería Math
+    let numeritos = [74, 98, 39, 12, 47, 20]
+    console.log(Math.max(...numeritos));  // 98
+    console.log(Math.min(...numeritos));  // 12
+
+
+    // Eliminar elementos duplicados
+    let numeritos2 = [6, 7, 9, 3, 4, 7, 3]
+    console.log([...new Set(numeritos2)]);  // [6, 7, 9, 3, 4]
 
   </script>
 
