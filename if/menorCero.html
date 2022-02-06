@@ -15,7 +15,8 @@
     
 
     <script>
-        function menorAcero(num) {
+
+        menorAcero = (num) => {
             if(num <= 0) {
                 return console.log('True')
             }
@@ -24,10 +25,11 @@
             }
         }
 
-        menorAcero(4)
-        menorAcero(0)
-        menorAcero(-3)
-        menorAcero(10)
+        menorAcero(4)   // False
+        menorAcero(0)   // True
+        menorAcero(-3)  // True
+        menorAcero(10)  // False
+
     </script>
     
 </body>

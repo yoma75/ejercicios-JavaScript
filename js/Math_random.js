@@ -12,6 +12,7 @@ do
   numUser = parseFloat(prompt("Ingrese un número entre 1 y 10: "));
 while ((isNaN(numUser)) || ((numUser < 1) || (numUser > 10)));
 
+
 if (numUser == escogerNumero)
   console.log("Felicitaciones, ese era!");
 else

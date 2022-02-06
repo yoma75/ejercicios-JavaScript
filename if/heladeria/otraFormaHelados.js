@@ -14,4 +14,3 @@ const definirCompra = (n) => {
 console.log(definirCompra("Cofla"));
 console.log(definirCompra("Roberto"));
 console.log(definirCompra("Pedro"));
-

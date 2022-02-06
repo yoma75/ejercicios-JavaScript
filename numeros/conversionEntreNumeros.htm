@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <title>Conversion entre numeros</title>
+</head>
+
+<body>
+
+  <h2 class="m-3"><span class="text-danger">parseInt(): </span> convierte cadenas numéricas en números.</h2>
+  <h2 class="m-3"><span class="text-danger">parseFloat(): </span> convierte a números con punto flotantes.</h2>
+  <h2 class="m-3"><span class="text-danger">toString(): </span> convierte números en cadenas numéricas.</h2>
+
+  <script>
+    
+    console.log(parseInt('100'));  // 100
+    console.log(parseInt('abc'));  // NaN, no es un número
+    console.log(parseInt('0xF'));  // 15 (Hexadecimal number)
+
+
+    console.log(parseFloat('1.00'));  // 1
+    console.log(parseFloat('1.50'));  // 1.5
+    console.log(parseFloat('abc'));   // NaN
+
+
+    // Conversion de números a cadenas
+    let num = 150;
+    let num2 = 1.65;
+
+    console.log(num.toString());    // 150
+    console.log(num2.toString());   // 1.65
+    console.log((250).toString());  // 250
+
+  </script>
+
+</body>
+</html>

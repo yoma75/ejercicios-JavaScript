@@ -10,7 +10,7 @@ let num;
 
 do 
   num = parseFloat(prompt("Ingrese un número: "));
-while (isNaN(num));
+while (isNaN(num));  // si digita un carácter diferente a un número, se sigue mostrando el prompt.
 
 if (num > 10) 
   console.log(`El número ${num} es mayor a 10`);  
