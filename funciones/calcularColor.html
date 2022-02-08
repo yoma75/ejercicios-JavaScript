@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcular color</title>
+  <style>body{font-family: Arial, Helvetica, sans-serif;}</style>
+</head>
+<body>
+  
+  <h3>La función calcularColor recibe un número como argumento y retorna un string de acuerdo al número:</h3>
+
+    <p>Si el número es 1 retorna "El color es negro".</p>
+    <p>Si el número es 2 retorna "El color es blanco".</p>
+    <p>Si el número es 3 retorna "El color es azul".</p>
+    <p>De lo contrario retorna "El color es verde".</p>
+  
+  
+  <script>
+
+    let color;
+
+    function calcularColor(numero) {
+      if (numero == 1) {
+        color = 'negro' 
+        return color
+      } else if (numero == 2) {
+        color = 'blanco'
+        return color
+      } else if (numero == 3) {
+        color = 'azul'
+        return color
+      } else {
+        color = 'verde'
+        return color
+      }
+    }
+
+    console.log(`El color es: ${calcularColor(1)}`);
+    console.log(`El color es: ${calcularColor(2)}`);
+    console.log(`El color es: ${calcularColor(3)}`);
+    console.log(`El color es: ${calcularColor(7)}`);
+
+  </script>
+  
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hallar promedio</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h3>Escribe una función llamada promedio que reciba un arreglo de números y retorne el promedio de los elementos.</h3>
+
+  <p>console.log(promedio([1, 2, 3, 4])) // 2.5</p>
+  <p>console.log(promedio([7, 8, 9])) // 8</p>
+  <p>console.log(promedio([300, 100])) // 200</p>
+
+
+  <script>
+
+    function promedio(arreglo) {
+      let suma = 0;
+
+      for (numerito of arreglo) {
+        suma += numerito;
+      }
+
+      let promedio = (suma / arreglo.length);
+      return promedio;
+    }
+
+    console.log(promedio([1, 2, 3, 4])) // 2.5
+    console.log(promedio([7, 8, 9]))    // 8
+    console.log(promedio([300, 100]))   // 200
+
+  </script>
+
+</body>
+</html>
