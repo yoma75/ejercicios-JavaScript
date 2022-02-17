@@ -23,5 +23,5 @@ n++;
 }
 
 console.log(numeros);
-numeros.splice(1,1);  //  En el index [1] elimine una posición
+numeros.splice(1,1);  // A partir del index [1] elimine una posición
 console.log(numeros);

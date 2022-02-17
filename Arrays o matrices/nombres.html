@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array nombres</title>
+  <style>p{font-family: Arial, Helvetica, sans-serif;}</style>
+</head>
+
+<body>
+
+  <p>Crea un programa a partir de las siguientes instrucciones:</p>
+  <p>Crea una variable llamada nombres con un arreglo que tenga los siguientes elementos: "Pedro", "Pablo", "María", "Juan", "Diana".</p>
+  <p>Pídele al usuario que ingrese un nombre e insértalo al final del arreglo que creaste en el paso 1.</p>
+  <p>Pídele al usuario que ingrese otro nombre y reemplaza la tercera posición del arreglo con este valor.</p>
+  <p>Recorre el arreglo e imprímelo.</p>
+  
+  <p>Ingresa un nombre> Camilo</p>
+  <p>Ingresa otro nombre> Ariel</p>
+  <p>Pedro</p>
+  <p>Pablo</p>
+  <p>Ariel</p>
+  <p>Juan</p>
+  <p>Diana</p>
+  <p>Camilo</p>
+
+  <script>
+
+    nombres = ['Pedro', 'Pablo', 'Maria', 'Juan', 'Diana']
+
+    nameUser = prompt('Ingrese un nombre: ')
+    nombres.push(nameUser)
+
+    nameUserOther = prompt('Ingrese otro nombre: ')
+    nombres[2] = nameUserOther
+
+    nombres.forEach(e => {
+      console.log(e);
+    });
+
+  </script>
+
+</body>
+</html>
