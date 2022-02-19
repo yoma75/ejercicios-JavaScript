@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dividir dos números</title>
+  <style>h3{font-family: Arial, Helvetica, sans-serif;}</style>
+</head>
+<body>
+
+  <h3>
+    Crear un programa que calcule la división de dos números. En caso de que el divisor sea cero mostrar un mensaje de error.
+  </h3>
+
+
+  <script>
+
+    function division(dividiendo, divisor) {
+      
+      if (divisor == 0) {
+        return `ERROR, no se puede dividir entre 0` 
+
+      } else {
+        return `${dividiendo} dividido en ${divisor} es: ${parseFloat(dividiendo / divisor)}`
+      }
+    }
+
+    console.log(division(25, 5));  // 25 dividido en 5 es: 5
+    console.log(division(97, 3));  // 97 dividido en 3 es: 32.333333333333336
+    console.log(division(10, 0));  // ERROR, no se puede dividir entre 0
+
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sueldo trabajador</title>
+  <style>ul{font-family: Arial, Helvetica, sans-serif;}</style>
+</head>
+
+<body>
+
+  <ul>
+    Crear un programa para:
+    <li>calcular el salario de una persona con base en el número de horas trabajadas y el valor de la hora. </li>
+    <li>Si la persona trabaja más de 40 horas, las horas extras deben pagarse con un incremento del 50% sobre el valor de la hora normal. </li>
+    <li>Mostrar el salario total y cuánto ganó por horas extras.</li>
+  </ul>
+
+  <script>
+
+    let vlrHoraExtra = 0
+    let salarioTotal = 0
+    let horasExtras = 0
+    
+    function salarioPersona(salarioTotal, vlrHoraNormal, horasTrabajadasNormales) {
+
+      if (horasTrabajadasNormales > 40) {
+
+        horasExtras = (horasTrabajadasNormales - 40) 
+        vlrHoraExtra = ((vlrHoraNormal * 0.5) + vlrHoraNormal) * horasExtras 
+        salarioTotal = (vlrHoraExtra + salarioTotal)
+        console.log(`Su salario total (incluye valor total de horas extras) es: ${salarioTotal}`);
+        console.log(`horas extras: ${horasExtras}`);
+        console.log(`Total horas extras: ${vlrHoraExtra}`);    
+
+      } else {
+        console.log(`\nSu salario total es: ${salarioTotal}`);
+        console.log(`Usted no tiene horas extras`.toUpperCase());
+      }      
+    }
+
+    salarioPersona(900000, 5000, 53)  // Su salario total (incluye valor total de horas extras) es: 997500
+                                      // horas extras: 13
+                                      // Total horas extras: 97500
+
+    salarioPersona(2500000, 14500, 10)  // Su salario total es: 2500000
+                                        // USTED NO TIENE HORAS EXTRAS
+  </script>
+
+</body>
+</html>
