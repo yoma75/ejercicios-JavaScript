@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>replaceAll()</title>
+  <style>
+    h3,
+    p,
+    li {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h3>replaceAll('buscar','reemplazar'): devuelve una nueva cadena con todas las coincidencias a cambiar</h3>
+  <p>Escribe un programa que le pida una frase al usuario y le muestre una nueva frase con los siguientes cambios:</p>
+
+  <ul>
+    <li>Las mayúsculas se reemplazan por minúsculas.</li>
+    <li>Se eliminan los espacios en blanco.</li>
+    <li>Reemplaza el caracter "a" por "4".</li>
+    <li>Reemplaza el caracter "e" por "3".</li>
+    <li>Reemplaza el caracter "i" por "1".</li>
+    <li>Reemplaza el caracter "o" por "0".</li>
+  </ul>
+
+
+  <script>
+
+    let frase = prompt('Ingrese una frase: ').toLowerCase()
+
+    frase = frase.replaceAll('a', '4');
+    frase = frase.replaceAll('e', '3');
+    frase = frase.replaceAll('i', '1');
+    frase = frase.replaceAll('o', '0');
+    frase = frase.replaceAll(' ', '');
+    console.log(frase.trim());
+
+  </script>
+
+</body>
+</html>
