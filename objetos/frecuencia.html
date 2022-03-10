@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>frecuencias</title>
+  <style>h3, p {font-family: Arial, Helvetica, sans-serif;}</style>
+</head>
+<body>
+
+  <h3>Escribe una función llamada frecuencias que reciba un string y retorne un objeto con el número de veces que aparece cada carácter (exceptuando el espacio en blanco):</h3>
+
+  <p>console.log(frecuencias("hola mundo"));</p>
+  <p>{ h: 1, o: 2, l: 1, a: 1, m: 1, u: 1, n: 1, d: 1 }</p>
+
+  <p>console.log(frecuencias("anita lava la tina"));</p>
+  <p>{ a: 6, n: 2, i: 2, t: 2, l: 2, v: 1 }</p>
+
+
+  <script>
+
+    function frecuencias(texto) {
+      const frecuencias = {};
+      const palabras = texto.toLowerCase().split(" ");  // convierto en minúsculas y la separe en espacios
+
+      for (let index = 0; index < palabras.length; index++) {
+        const word = palabras[index];
+
+        for (let charIndex = 0; charIndex < word.length; charIndex++) {
+          const char = word[charIndex];
+
+          if (frecuencias[char] === undefined) {
+            frecuencias[char] = 1;
+          } else {
+            frecuencias[char] += 1;
+          }          
+        }        
+      }
+      return frecuencias
+    }
+
+    console.log(frecuencias("hola mundo"));           // {a: 1, d: 1, h: 1, l: 1, m: 1, n: 1, o: 2, u: 1}
+    console.log(frecuencias("anita lava la tina"));   // {a: 6, i: 2, l: 2, n: 2, t: 2, v: 1}
+
+  </script>
+  
+</body>
+</html>

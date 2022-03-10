@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>persona</title>
+  <style>h3, ol, p {font-family: Arial, Helvetica, sans-serif;}</style>
+</head>
+<body>
+
+  <h3>Crea una variable llamada pedro de tipo objeto literal con las siguientes llaves y valores:</h3>
+
+  <p>nombre - "Pedro Perez"</p>
+  <p>edad - 30</p>
+  <p>activo - true</p>
+  <p>hobbies - un arreglo con los siguientes elementos: "programar", "squash", "piano".</p>
+  
+  <ol>
+    <li>Imprime en consola el valor de la llave edad.</li>
+    <li>Agrega una propiedad con llave estatura y valor 1.8.</li>
+    <li>Elimina la propiedad con llave activo.</li>
+    <li>Recorre todas las propiedades e imprímelas en consola (una línea por propiedad y separando la llave y el valor con dos puntos :</li>
+  </ol>
+
+  <h3>El resultado en consola debería ser parecido al siguiente (puede que las propiedades no salgan en el mismo orden):</h3>
+  <p>30</p>
+  <p>nombre: "Pedro Perez"</p>
+  <p>edad: 30</p>
+  <p>hobbies: ["programar", "squash", "piano"]</p>
+  <p>estatura: 1.8</p>
+
+
+  <script>
+
+    const Pedro = {
+      nombre: 'Pedro Perez',
+      edad: 30,
+      activo: true,
+      hobbies: ["programar", "squash", "piano"]
+    }
+
+    console.log(Pedro.edad);
+    Pedro.estatura = 1.8;
+    delete Pedro.activo;
+
+    for(const key in Pedro){
+      console.log(`${key}: ${Pedro[key]}`)
+    }
+
+  </script>
+  
+</body>
+</html>
