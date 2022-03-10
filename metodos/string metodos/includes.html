@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>includes</title>
+  <style>
+    h3,
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h3>pida dos frases al usuario e imprima los caracteres que tienen en común. Si no tienen caracteres en común debe
+    imprimir "No se encontraron caracteres en común".</h3>
+
+  <p>Ingresa frase 1> Germán</p>
+  <p>Ingresa frase 2> Gabriela</p>
+  <p>Los caracteres en común son: G, e, r, a</p>
+  <br>
+
+  <p>Ingresa frase 1> Hola</p>
+  <p>Ingresa frase 2> Bye</p>
+  <p>No se encontraron caracteres en común</p>
+
+
+  <script>
+
+    // includes() determina si una cadena de texto puede ser encontrada dentro de otra cadena de texto.
+
+    let frase1 = prompt("Ingrese frase1: ");
+    let frase2 = prompt("Ingrese frase2: ");
+    let aux = [];
+    let contador = 0;
+
+    for (let i = 0; i < frase1.length; i++) {
+      if (frase2.includes(frase1[i])) {
+        aux.push(frase1[i]);
+        contador++;
+      }
+    }
+
+    if (contador !== 0) {
+      console.log(frase1);
+      console.log(frase2);
+      console.log(`Los carácteres en común son: ${aux}`);
+    }
+    else {
+      console.log("No se encontraron caracteres en común")
+    }
+
+  </script>
+
+</body>
+</html>
