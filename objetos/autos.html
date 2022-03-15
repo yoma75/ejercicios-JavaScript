@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>autos</title>
+  <style>h2, p{font-family: Arial, Helvetica, sans-serif;}</style>
+</head>
+
+<body>
+
+  <p id="demo"></p>
+
+  <script>
+
+    // Acceder a arreglos dentro de arreglos
+
+    let x = "";
+    const myObj = {
+      name: "John",
+      age: 30,
+      cars: [
+        { marcas: "Ford", models: ["Fiesta", "Focus", "Mustang"] },
+        { marcas: "BMW", models: ["320", "X3", "X5"] },
+        { marcas: "Fiat", models: ["500", "Panda"] }
+      ]
+    }
+
+    // recorre array marcas [Ford, BMW, Fiat]
+    for (let i in myObj.cars) {  // cars: propiedad de myObj
+      x += `<h2> ${myObj.cars[i].marcas} </h2>`;  
+      
+      // recorre array models de cada una de las marcas
+      for (let j in myObj.cars[i].models) {
+        x += `${myObj.cars[i].models[j]} <br>`;  
+      }
+    }
+
+    document.getElementById("demo").innerHTML = x;
+
+  </script>
+
+</body>
+</html>
