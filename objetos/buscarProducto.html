@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>buscar producto</title>
+  <style>h3, p{font-family: Verdana, Geneva, Tahoma, sans-serif;}</style>
+</head>
+
+<body>
+
+  <h3>Escribe una función buscarProducto que reciba un arreglo de objetos y un número. La función deberá buscar el
+    número dentro de cada objeto (en la llave id) y retornar el objeto encontrado.</h3>
+
+  <p>Si no encuentra un objeto con ese id deberá retornar null.</p>
+
+
+  <p>let productos = [</p>
+    <p>{ id: 1, nombre: "A" },</p>
+    <p>{ id: 2, nombre: "B" },</p>
+  <p>];</p>
+  <p>console.log(buscarProducto(productos, 1)); // { id: 1, nombre: "A" }</p><br>
+
+  <p>productos = [</p>
+    <p>{ id: 1, nombre: "A" },</p>
+    <p>{ id: 2, nombre: "B" },</p>
+  <p>];</p>
+  <p>console.log(buscarProducto(productos, 566)); // null</p>
+
+
+  <script>
+
+    function buscarProducto(array, numero) {
+
+      for (let x in productos) {
+        if (productos[x].id == numero) {
+          return `id: ${productos[x].id}, nombre: "${productos[x].nombre}"`;
+        } else {
+          return null;
+        }
+      }
+    }
+
+    
+    let productos = [
+      { id: 1, nombre: "A" },
+      { id: 2, nombre: "B" },
+    ];
+    
+    productos = [
+      { id: 1, nombre: "A" },
+      { id: 2, nombre: "B" },
+    ];
+    
+    console.log(buscarProducto(productos, 1));    // { id: 1, nombre: "A" }
+    console.log(buscarProducto(productos, 566));  // null
+    
+  </script>
+
+</body>
+</html>

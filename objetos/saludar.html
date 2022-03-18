@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>funcion saludar</title>
+  <style>h2, p{font-family: Arial, Helvetica, sans-serif;}</style>
+</head>
+<body>
+
+  <h2>Escribe una función llamada saludar que reciba un objeto que representa una persona y retorne la frase como se muestra a continuación:</h2>
+
+  <p>const pedro = { nombre: "Pedro", edad: 23 };</p>
+  <p>console.log(saludar(pedro)); // "Hola Pedro, tienes 23 años"</p><br>
+
+  <p>const maria = { nombre: "Maria", edad: 35 };</p>
+  <p>console.log(saludar(maria)); // "Hola Maria, tienes 35 años"</p><br>
+
+  <p>const juan = { nombre: "Juan" };</p>
+  <p>console.log(saludar(juan)); // "Hola Juan"</p><br>
+
+  <p>El objeto siempre tendrá la llave nombre. La llave edad es opcional y cuando no está presente deberás omitir la parte tienes x años.</p>
+
+
+  <script>
+
+    function saludar(persona) {  // recibe un objeto que representa una persona
+
+      if (persona.edad) {
+        console.log(`Hola ${persona.nombre}, tienes ${persona.edad} años`)
+      } else {
+        console.log(`Hola ${persona.nombre}`)
+      }        
+    }
+
+    const pedro = { nombre: "Pedro", edad: 23 };      
+    const maria = { nombre: "Maria", edad: 35 };      
+    const juan = { nombre: "Juan" };
+      
+    saludar(pedro);  // "Hola Pedro, tienes 23 años"
+    saludar(maria);  // "Hola Maria, tienes 35 años"
+    saludar(juan);   // "Hola Juan"
+      
+  </script>
+  
+</body>
+</html>

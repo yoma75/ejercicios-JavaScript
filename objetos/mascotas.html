@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objeto mascotas</title>
+</head>
+<body>
+
+
+  <script>
+
+    const mascotas = [
+      {
+        animal: 'perro',
+        nombre: 'firulais',
+        edad: 14,
+        comida: ['carne', 'purina', 'agua'],
+        juguetes: ['pelota', 'hueso']
+      }, {
+        animal: 'pato',
+        nombre: 'donald',
+        edad: 2,
+        comida: ['agua', 'verduras'],
+        juguetes: ['piscina']
+      }, {
+        animal: 'tigre',
+        nombre: 'miau',
+        edad: 10,
+        comida: ['agua', 'carne', 'purina'],
+        juguetes: ['piscina', 'baloncito']
+      }
+    ];
+
+
+    //  Obtener animales que se alimenten con carne, imprimir animal y edad
+    for (let x in mascotas) {
+      for (let z in mascotas[x].comida) {
+        if (mascotas[x].comida[z] == 'carne') {
+          console.log(`${mascotas[x].animal}: ${mascotas[x].edad}`);  // perro: 14
+                                                                      // tigre: 10
+        }
+      }
+    }
+
+
+    // Obtener animales que su juguete sea piscina y de comida purina, imprimir animal y nombre
+    for (let x in mascotas) {
+      for (let z in mascotas[x].juguetes) {
+        for (let c in mascotas[x].comida) {
+          if ((mascotas[x].juguetes[z] == 'piscina') && (mascotas[x].comida[c] == 'purina')) {
+            console.log(`Animal '${mascotas[x].animal}' : nombre '${mascotas[x].nombre}'`);
+            // Animal 'tigre' : nombre 'miau'
+          }
+        }
+      }
+    } 
+
+  </script>
+  
+</body>
+</html>

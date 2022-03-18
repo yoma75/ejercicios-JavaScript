@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Números pares</title>
+  <style>h3, p{font-family:Arial, Helvetica, sans-serif}</style>
+</head>
+<body>
+
+  <h3>Escribe una función llamada pares que reciba un arreglo de números y retorne un nuevo arreglo con los números pares que existen en el arreglo:</h3>
+
+  <p>console.log(pares([0, 1, 2, 3, 4]))  // [0, 2, 4]</p>
+  <p>console.log(pares([120, 876, 934, 1298]))  // [120, 876, 934, 1298]</p>
+  <p>console.log(pares([7, 921, 43, 9649]))  // []</p>
+
+  <script>
+
+    function pares(array){
+      return array.filter((e) => { return e % 2 == 0; })
+    };
+
+    console.log(pares([0, 1, 2, 3, 4]))        // [0, 2, 4]
+    console.log(pares([120, 876, 934, 1298]))  // [120, 876, 934, 1298]
+    console.log(pares([7, 921, 43, 9649]))     // []
+
+  </script>
+  
+</body>
+</html>

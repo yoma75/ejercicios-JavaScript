@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>persona objeto</title>
+  <style>h3, p, ul{font-family: Verdana, Geneva, Tahoma, sans-serif;}</style>
+</head>
+<body>
+
+  <h3>Crea una variable llamada persona de tipo objeto literal con las siguientes propiedades:</h3>
+
+  <ul>
+    <li>peso - 65</li>
+    <li>estatura - 1.8</li>
+    <li>bmi - una función que retorne el índice de masa corporal de la persona. Recuerda que la fórmula es peso/estatura^2 (peso sobre estatura al cuadrado).</li>
+  </ul><br>
+
+  <p>console.log(persona.bmi()); // 20.061728395061728</p>
+  
+
+  <script>
+
+    const persona = {
+      peso: 65,
+      estatura: 1.8,
+      bmi: function() {
+        return `${this.peso / (this.estatura ** 2)}`
+      }
+    };
+
+    console.log(persona.bmi());  // 20.061728395061728
+
+  </script>
+
+</body>
+</html>

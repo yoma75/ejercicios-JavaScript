@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descifrar</title>
+  <style>h3, p{font-family: Arial, Helvetica, sans-serif;}</style>
+</head>
+
+<body>
+
+  <h3>Escribe una función llamada descifrar que reciba un string y un objeto. Utiliza las propiedades del objeto para reemplazar los caracteres de la cadena y retorna el resultado:</h3>
+
+  <p>console.log(descifrar("h0l4", { 0: "o", 4: "a" }));  // "hola"</p>
+  <p>console.log(descifrar("pyrmizo", { y: "e", z: s }));  // "permiso"</p>
+  <p>console.log(descifrar("igual", { h: "n" }));  // "igual"</p>
+
+
+  <script>
+
+    function descifrar(cadena, arreglos) {
+
+      for (let x in arreglos) {
+        cadena = cadena.replace(x, arreglos[x]);
+      }
+      return cadena;
+    }
+
+    // código de prueba
+    console.log(descifrar("h0l4", { 0: "o", 4: "a" }));     // "hola"
+    console.log(descifrar("pyrmizo", { y: "e", z: "s" }));  // "permiso"
+    console.log(descifrar("igual", { h: "n" }));            // "igual"
+
+  </script>
+
+</body>
+</html>
