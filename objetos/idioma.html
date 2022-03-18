@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Idioma ingles</title>
+</head>
+<body>
+
+  <h3 style="font-family: Arial, Helvetica, sans-serif;">Obtener el nombre y la edad de las personas que hablen inglés (EN) de un arreglo de 5 objetos Persona</h3>
+
+  <p>Respuesta:</p>
+  <p>Juana: 30</p>
+  <p>Carla: 31</p>
+
+
+  <script>
+
+    const personas = [
+      {
+        nombre: "Juana",
+        sexo: "F",
+        edad: 30,
+        idiomas: ["EN","ES"]
+      }, {
+        nombre: "Mario",
+        sexo: "M",
+        edad: 20,
+        idiomas: ["ES"]
+      }, {
+        nombre: "Carla",
+        sexo: "F",
+        edad: 31,
+        idiomas: ["EN"]
+      }, {
+        nombre: "Maria",
+        sexo: "F",
+        edad: 37,
+        idiomas: ["EN","ES"]
+      }, {
+        nombre: "Fernando",
+        sexo: "M",
+        edad: 42,
+        idiomas: ["ES"]
+      }
+    ];
+
+
+    for (let x in personas) {  // recorre objeto personas   
+      for (let z in personas[x].idiomas) {  // recorre array idiomas de cada persona
+        if (personas[x].idiomas[z] === 'EN') {
+          console.log(`${personas[x].nombre}: ${personas[x].edad}`);
+        }
+      }    
+    }    
+    
+
+    // otra forma de resolver:
+    /* for(let key in personas) {
+        if(!personas[key].idiomas.indexOf("EN")) {
+          console.log(personas[key].nombre +": ",personas[key].edad);
+        } 
+       } */ 
+
+  </script>
+  
+</body>
+</html>

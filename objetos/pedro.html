@@ -40,12 +40,15 @@
       hobbies: ["programar", "squash", "piano"]
     }
 
-    console.log(Pedro.edad);
+    console.log(Pedro.edad);  // 30
     Pedro.estatura = 1.8;
     delete Pedro.activo;
 
     for(const key in Pedro){
-      console.log(`${key}: ${Pedro[key]}`)
+      console.log(`${key}: ${Pedro[key]}`)  // nombre: Pedro Perez
+                                            // edad: 30
+                                            // hobbies: programar,squash,piano
+                                            // estatura: 1.8
     }
 
   </script>

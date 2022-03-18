@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agencia de viajes</title>
+  <style>h2, p, ul{font-family: Arial, Helvetica, sans-serif;}</style>
+</head>
+
+<body>
+
+  <h2>Crear un programa para una agencia de viajes, el usuario ingresa la ciudad de origen y la ciudad de destino, el
+    valor del tiquete es 1000, y tiene los siguientes descuentos:</h2>
+  <ul>
+    <li>Si la ciudad de destino es Medellín entonces el tiquete tiene 10% de descuento</li>
+    <li>Si la ciudad de destino es Bogota tiene un 15% de descuento</li>
+    <li>Si la ciudad de origen es Cartagena tiene un 5% de descuento</li>
+  </ul>
+
+  <p>Los descuentos pueden ser acumulables sobre el valor total del tiquete (1000).</p>
+  <p>Imprimir el descuento total y el valor final del tiquete si tiene descuentos</p>
+
+
+  <script>
+   
+    const tiquete = 1000
+    let descuento = 0      
+
+
+    function agenciaViajes() {
+
+      const origen = prompt('Ciudad de Origen: ');
+      const destino = prompt('Ciudad de destino: ');
+
+      if (destino == 'Medellin') {
+        descuento = (tiquete * 10) / 100        
+        // El descuento es de 100 y el valor final del tiquete es de 900
+
+      } else if (destino == 'Bogota') {
+        descuento = (tiquete * 15) / 100
+        // El descuento es de 150 y el valor final del tiquete es de 850
+
+      } else if (destino == 'Cartagena') {
+        descuento = (tiquete * 5) / 100
+        // El descuento es de 50 y el valor final del tiquete es de 950
+      }
+
+      return console.log(`El descuento es de ${descuento} y el valor final del tiquete es de ${tiquete - descuento}`)      
+    }    
+
+    agenciaViajes();
+
+  </script>
+
+</body>
+</html>
