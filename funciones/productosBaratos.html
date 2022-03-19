@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>productos baratos</title>
+  <style>h3, p{font-family: Arial, Helvetica, sans-serif;}</style>
+</head>
+<body>
+
+  <h3>Escribe una función llamada productosBaratos que reciba un arreglo de objetos (que representan productos) y retorne un nuevo arreglo con los nombres de los productos cuyo precio esté entre 5 y 10:</h3>
+
+  <p>let prods = [</p>
+    <p>{ nombre: "Arroz", precio: 5 },</p>
+    <p>{ nombre: "Pan", precio: 3 },</p>
+    <p>{ nombre: "Tomate", precio: 8 },</p>
+    <p>{ nombre: "Leche", precio: 15 }</p>
+  <p>];</p>
+  <p>console.log(productosBaratos(prods)); // ["Arroz", "Tomate"]</p>
+
+
+  <script>
+
+    const nuevoArray = []
+
+    function productosBaratos(productos) {
+      productos.map(e => {
+        if ((e.precio >= 5) && (e.precio < 10)) {
+          nuevoArray.push(e.nombre)
+        }
+      })
+      return nuevoArray
+    }
+
+    let prods = [
+      { nombre: "Arroz", precio: 5 },
+      { nombre: "Pan", precio: 3 },
+      { nombre: "Tomate", precio: 8 },
+      { nombre: "Leche", precio: 15 }
+    ];
+
+    console.log(productosBaratos(prods));  // ['Arroz', 'Tomate']
+
+  </script>
+  
+</body>
+</html>

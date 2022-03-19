@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saludo</title>
+  <style>h3, p{font-family: Arial, Helvetica, sans-serif;}</style>
+</head>
+<body>
+
+  <h3>Crea una función flecha y asígnala a una variable llamada hola. La función debe recibir un argumento name (con valor por defecto "Pedro") y debe retornar la frase "Hola " seguido del nombre y un signo de exclamación.</h3>
+
+  <p>console.log(hola()) // "Hola Pedro!"</p>
+  <p>console.log(hola("Maria")) // "Hola Maria!"</p>
+
+
+  <script>
+
+    const hola = (name = 'Pedro') => {
+      return `Hola ${name}!`
+    }
+
+    console.log(hola())  // "Hola Pedro!"
+    console.log(hola("Maria"))  // "Hola Maria!"
+
+  </script>
+  
+</body>
+</html>

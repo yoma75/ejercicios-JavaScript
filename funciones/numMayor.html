@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Número mayor</title>
+  <style>
+    h3,
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h3>Crea una función llamada max (puede ser normal o función flecha) que reciba un arreglo de números como argumento y
+    retorne el número mayor.</h3>
+
+  <h3>Nota: No utilices el método Math.max de JavaScript.</h3>
+
+  <p>console.log(max([1, 2, 3, 4])) // 4</p>
+  <p>console.log(max([63, 85, 39, 24, 3])) // 85</p>
+
+
+  <script>
+
+    const mayor = (a, b) => {
+      return a > b ? a : b;
+    };
+
+
+    const maximo = (numeros) => {
+      let max = 0;
+      for (let z of numeros) {
+        max = mayor(max, z);
+      }
+      return max;
+    }
+
+    console.log(maximo([1, 2, 3, 4])) // 4
+    console.log(maximo([63, 85, 39, 24, 3])) // 85
+
+  </script>
+
+</body>
+</html>

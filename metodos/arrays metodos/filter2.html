@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obtener impares</title>
+  <style>h3, p{font-family: Arial, Helvetica, sans-serif;}</style>
+</head>
+<body>
+
+  <h3>Crea una función flecha y asígnala a una variable obtenerImpares. La función debe recibir un arreglo de números y retornar todos los impares.</h3>
+
+  <h3>Nota: Utiliza el método filter y pásale una función flecha como argumento.</h3>
+
+  <p>console.log(obtenerImpares([1, 2, 3, 4, 5]))  // [1, 3, 5]</p>
+  <p>console.log(obtenerImpares([64, 35, 27]))  // [35, 27]</p>
+  <p>console.log(obtenerImpares([]))  // []</p>
+
+
+  <script>
+
+    const obtenerImpares = (arreglo) => {
+      return arreglo.filter(e => e % 2 == 1 )
+    }
+
+    console.log(obtenerImpares([1, 2, 3, 4, 5]))  // [1, 3, 5]
+    console.log(obtenerImpares([64, 35, 27]))  // [35, 27]
+    console.log(obtenerImpares([]))  // []
+
+  </script>
+  
+</body>
+</html>

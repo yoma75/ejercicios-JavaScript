@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>multiplicar</title>
+  <style>h3, p{font-family: Arial, Helvetica, sans-serif;}</style>
+</head>
+<body>
+
+  <h3>Escribe una función llamada multiplicar que reciba un arreglo (de números) y un número. La función debe retornar un nuevo arreglo con cada número multiplicado por segundo número:</h3>
+
+  <p>console.log(multiplicar([1, 2, 3], 2)) // [2, 4, 6]</p>
+  <p>console.log(multiplicar([7, 4], 3)) // [21, 12]</p>
+  <p>console.log(multiplicar([], 10)) // []</p>
+  <h3>Nota: intenta utilizar el método map de los arreglos.</h3>
+
+  <script>
+
+    function multiplicar(array, numero) {
+      return array.map((e) => e * numero)
+    }
+
+    console.log(multiplicar([1, 2, 3], 2))  // [2, 4, 6]
+    console.log(multiplicar([7, 4], 3))  // [21, 12]
+    console.log(multiplicar([], 10))  // []
+
+  </script>
+  
+</body>
+</html>

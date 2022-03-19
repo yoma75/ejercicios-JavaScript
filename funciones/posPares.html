@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>posPares</title>
+  <style>h3, p{font-family: Arial, Helvetica, sans-serif;}</style>
+</head>
+<body>
+
+  <h3>Escribe una función llamada posPares que reciba un arreglo y retorne un nuevo arreglo con los valores en las posiciones pares del arreglo que llega como argumento.</h3>
+
+  <p>console.log(posPares(["a", "b", "c"])) // ["a", "c"]</p>
+  <p>console.log(posPares([0, 1, 2, 3, 4])) // [0, 2, 4]</p>
+  <p>console.log(posPares([])) // []</p>
+  <p>Nota: Intenta utilizar el método filter de los arreglos.</p>
+
+
+  <script>
+
+  const posPares = (arreglo)=> {
+     return arreglo.filter((valor,indice) => indice % 2 == 0)    
+  }
+
+  console.log(posPares(["a", "b", "c"]))  // ["a", "c"]
+  console.log(posPares([0, 1, 2, 3, 4]))  // [0, 2, 4]
+  console.log(posPares([]))  // []
+
+  </script>
+  
+</body>
+</html>
