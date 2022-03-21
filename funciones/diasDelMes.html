@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Días del mes</title>
+  <style>h3, p{font-family: Arial, Helvetica, sans-serif;}</style>
+</head>
+<body>
+
+  <h3>Crea una función llamada diasDelMes que reciba el nombre de un mes del año (en minúsculas) y retorne la cantidad de días que tiene el mes.</h3>
+
+  <p>console.log(diasDelMes("enero"))  // 31</p>
+  <p>console.log(diasDelMes("febrero"))  // 28</p>
+
+
+  <script>
+
+    function diasDelMes(mes) {      
+
+      if ((mes == 'enero') || (mes == 'marzo') || (mes == 'mayo') || (mes == 'julio') || (mes == 'agosto') || (mes == 'octubre') || (mes == 'diciembre')) {
+        return 31
+      } else if ((mes == 'abril') || (mes == 'junio') || (mes == 'septiembre') || (mes == 'noviembre')) {
+        return 30
+      } else if (mes == 'febrero') {
+        return 28      
+      }
+    }
+
+    console.log(diasDelMes("enero"))       // 31
+    console.log(diasDelMes("febrero"))     // 28
+    console.log(diasDelMes("septiembre"))  // 30
+
+  </script>
+  
+</body>
+</html>
