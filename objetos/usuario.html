@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>objeto usuario</title>
+  <style>h3, p, li{font-family: Arial, Helvetica, sans-serif;}</style>
+</head>
+
+<body>
+
+  <h3>Crea una variable llamada usuario de tipo objeto literal con las siguientes llaves y valores:</h3>
+
+  <ul>
+    <li>nombre - "Pedro Perez"</li>
+    <li>edad - 30</li>
+    <li>activo - true</li>
+    <li>hobbies - un arreglo con los siguientes elementos: "programar", "piano".</li>
+  </ul>
+
+  <ol>
+    <li>Imprime en consola el valor de la llave edad.</li>
+    <li>Agrega una propiedad con llave estatura y valor 1.8.</li>
+    <li>Elimina la propiedad con llave activo.</li>
+    <li>Agrega el hobbie "leer" al arreglo de hobbies.</li>
+    <li>Recorre todas las propiedades e imprímelas en consola (una línea por propiedad y separando la llave y el valor
+      con dos puntos :).</li>
+  </ol>
+
+  <p>El resultado en consola debería ser parecido al siguiente (puede que las propiedades no salgan en el mismo orden):
+  </p>
+  <p>30</p>
+  <p>nombre: "Pedro Perez"</p>
+  <p>edad: 30</p>
+  <p>hobbies: ["programar", "piano", "leer"]</p>
+  <p>estatura: 1.8</p>
+
+
+  <script>
+
+    const usuario = {
+      nombre: 'Pedro Perez',
+      edad: 30,
+      activo: true,
+      hobbies: ['programar', 'piano']
+    }
+
+    console.log(usuario.edad);
+    usuario.estatura = 1.8
+    delete usuario.activo
+    usuario.hobbies.push('leer')
+
+    for (let x in usuario) {
+      console.log(`${x} : ${usuario[x]}`);  // x: propiedad, usuario[x]: valor de la propiedad
+    }
+
+  </script>
+
+</body>
+</html>
