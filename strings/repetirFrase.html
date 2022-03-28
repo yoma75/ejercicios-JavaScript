@@ -5,19 +5,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Repetir frase</title>
+  <style>h3, p{font-family: Arial, Helvetica, sans-serif;}</style>
 </head>
 <body>
 
-  <h3 style="font-family: Arial, Helvetica, sans-serif;">
-    Escribe un programa que le pida al usuario ingresar una frase. El programa debe imprimir la frase en la consola 10 veces.
+  <h3>
+    Escribe un programa que le pida al usuario una frase y un número. El programa debe imprimir la frase en la consola el número de veces que ingresó el usuario.
   </h3>  
 
-  <script>
-    let frase = prompt('Escribir frase: ')
+  <p>Por ejemplo, si el usuario ingresó la frase "Hola Mundo" y el número 5, el programa debe imprimir "Hola Mundo" 5 veces:</p>
+  <p>Hola Mundo</p>
+  <p>Hola Mundo</p>
+  <p>Hola Mundo</p>
+  <p>Hola Mundo</p>
+  <p>Hola Mundo</p>
 
-    for (let index = 1; index <=10; index++) {
-      console.log(index, frase);      
-    }
+  <script>
+
+    let frase = prompt('Escribir frase: ')
+    let numero = parseInt(prompt('Digite número: '))
+
+    for (let x = 1; x <= numero; x++) {
+      console.log(frase);      
+    }       
+    
   </script>
   
 </body>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>De 1 hasta N</title>
+  <style>h3, p{font-family: Arial, Helvetica, sans-serif;}</style>
+</head>
+<body>
+
+  <h3>Pedir al usuario un número n, e imprimir en consola un arreglo con los números de 1 a n</h3>
+
+  <p>número ingresado: 5</p>
+  <p>[1,2,3,4,5]</p>
+
+
+  <script>
+
+    let arrayNum = []
+    let numero = parseInt(prompt('Digite número: '))
+
+    for (let x = 1; x <= numero; x++) {
+      arrayNum.push(x)      
+    }
+    console.log(arrayNum);
+
+  </script>
+  
+</body>
+</html>
