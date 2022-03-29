@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Numero inicial hasta el final</title>
+  <style>h3, p{font-family: Arial, Helvetica, sans-serif;}</style>
+</head>
+<body>
+
+  <h3>Escribe un programa para la consola que le pida al usuario dos números e imprima en la consola los números en ese rango. Por ejemplo, si el usuario ingresa 5 como primer número y 10 como segundo número, el programa debe imprimir:</h3>
+  <p>5</p>
+  <p>6</p>
+  <p>7</p>
+  <p>8</p>
+  <p>9</p>
+  <p>10</p>
+
+
+  <script>
+
+    let num1 = parseInt(prompt('Digite número inicial: '))
+    let num2 = parseInt(prompt('Digite número final: '))
+
+    for (let x = num1; x < num2+1; x++) {
+      console.log(x);      
+    }
+
+  </script>
+  
+</body>
+</html>

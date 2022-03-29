@@ -19,6 +19,8 @@
 
     function diasDelMes(mes) {      
 
+      mes = mes.toLowerCase()
+
       if ((mes == 'enero') || (mes == 'marzo') || (mes == 'mayo') || (mes == 'julio') || (mes == 'agosto') || (mes == 'octubre') || (mes == 'diciembre')) {
         return 31
       } else if ((mes == 'abril') || (mes == 'junio') || (mes == 'septiembre') || (mes == 'noviembre')) {
@@ -29,7 +31,7 @@
     }
 
     console.log(diasDelMes("enero"))       // 31
-    console.log(diasDelMes("febrero"))     // 28
+    console.log(diasDelMes("Febrero"))     // 28
     console.log(diasDelMes("septiembre"))  // 30
 
   </script>
