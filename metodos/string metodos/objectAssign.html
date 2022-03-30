@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object.assign()</title>
+  <style>h3{font-family: Arial, Helvetica, sans-serif;} span{color:crimson}</style>
+</head>
+<body>
+
+  <h3><span>Object.assign()</span> : se utiliza para copiar los valores y propiedades de uno o más objetos de origen a un objeto de destino. Podemos proporcionar una cadena de texto como fuente y un array vacío como destino para crear una matriz a partir de una cadena de texto.</h3>
+
+  <script>
+
+    let country = 'Colombia'
+    let array = Object.assign([], country)
+    console.log(array);  // ['C', 'o', 'l', 'o', 'm', 'b', 'i', 'a']
+
+  </script>
+  
+</body>
+</html>

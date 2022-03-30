@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparar 2 arrays</title>
+  <style>h3, p{font-family: Arial, Helvetica, sans-serif;}</style>
+</head>
+<body>
+
+  <h3>Dados dos arreglos arreglo1 y arreglo2, escribe una función arraysIguales que retorne true si los elementos de cada arreglo representan la misma cadena de texto (string), de lo contrario retorna false.</h3>
+  <p>Una cadena de texto es representada por un arreglo, si los elementos del arreglo concatenados EN ORDEN forman una cadena de texto.</p>
+
+  <p>arreglo1[i] y arreglo2[i] incluyen solamente letras en minúscula de la a-z.</p>  
+  <p>Input: arreglo1 = ["ab", "c"], arreglo2 = ["a", "bc"]  // True</p>
+  <p>Input: arreglo1 = ["a", "cb"], arreglo2 = ["ab", "c"]  // False</p>
+  <p>Input: arreglo1  = ["abc", "d", "defg"], arreglo2 = ["abcddefg"]  // True</p>
+
+  
+  <script>
+
+  function arraysIguales(arreglo1, arreglo2) {
+    const cadena1 = arreglo1.join("");  // join("") quita los espacios y une todo en un string
+    const cadena2 = arreglo2.join("");
+    let resultado;
+    
+    resultado = (cadena1 === cadena2);
+
+    return resultado;
+  };
+
+  console.log(arraysIguales(["ab", "c"], ["a", "bc"] ))  // true
+  console.log(arraysIguales(["a", "cb"], ["ab", "c"] ))  // false
+  console.log(arraysIguales(["abc", "d", "defg"],["abcddefg"]  ))  // true
+
+  </script>
+
+</body>
+</html>

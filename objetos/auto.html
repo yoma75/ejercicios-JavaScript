@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto: acelerar y frenar</title>
+  <style>h3, p{font-family: Arial, Helvetica, sans-serif;}</style>
+</head>
+<body>
+
+  <h3>Crea un objeto literal en una variable llamada auto que tenga un atributo velocidad (con valor inicial 0) y dos métodos acelerar y frenar. Los métodos acelerar y frenar deben incrementar y decrementar la propiedad velocidad en 1.</h3>
+
+  <p>console.log(auto.velocidad) // 0</p>
+  <p>auto.acelerar()</p>
+  <p>console.log(auto.velocidad) // 1</p>
+  <p>auto.frenar()</p>
+  <p>console.log(auto.velocidad) // 0</p>
+
+
+  <script>
+
+    const auto = {
+      velocidad: 0,      
+      acelerar() { this.velocidad += 1; },
+      frenar() { this.velocidad -= 1; }
+    }
+
+    console.log(auto.velocidad)  // 0
+
+    auto.acelerar()
+    console.log(auto.velocidad)  // 1
+
+    auto.frenar()
+    console.log(auto.velocidad)  // 0
+
+  </script>
+  
+</body>
+</html>

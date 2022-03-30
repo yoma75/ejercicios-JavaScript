@@ -17,6 +17,12 @@
     console.log(palabra);
     console.log(`${palabra.split("")}`);  // array de carácteres individuales
 
+
+    // El método split() acepta un segundo parámetro en el cual podemos indicar un limite de divisiones. Este limite decide cuántos elementos serán incluidos en el array retornado.
+    let str = 'Golf | Hockey | Football | Tennis';
+    let arr = str.split(' | ', 2);
+    console.log(arr);  // ['Golf', 'Hockey']
+
   </script>
   
 </body>
