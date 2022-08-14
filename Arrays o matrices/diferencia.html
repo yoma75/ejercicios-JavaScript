@@ -7,12 +7,21 @@
 </head>
 <body>
 
-   <li>Dada una lista de números enteros, devuelve la diferencia entre los números enteros más grandes y más pequeños de la lista.</p>
-   <li>diferencia([10, 15, 20, 2, 10, 6]) ➞ 18</p>
-   <li>20 - 2 = 18</p>
+   <p>Dada una lista de números enteros, devuelve la diferencia entre los números enteros más grandes y más pequeños de la lista.</p>
+   <p>diferencia([10, 15, 20, 2, 10, 6]) ➞ 18</p>
+   <p>20 - 2 = 18</p>
+
+   <p id="resultado"></p>
 
 
    <script>
+
+      var diferencia = [10, 15, 20, 2, 10, 6];
+
+      var numMayor = Math.max(...diferencia);
+      var numMenor = Math.min(...diferencia);
+
+      document.getElementById("resultado").innerHTML = (`<h1>RESULTADO: ${numMayor} - ${numMenor} = ${numMayor - numMenor}</h1>`);
       
    </script>
    
