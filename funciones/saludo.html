@@ -7,16 +7,18 @@
    <style>body{font-family: Verdana, Geneva, Tahoma, sans-serif;}</style>
 </head>
 <body>
+
+   <h3 id="resultado"></h3>
    
    
    <script>
 
       let saludar = (nombre) => {
-         // document.write('Hola ' + nombre + ' como estas ?');
-         document.write(`Hola ${nombre}, como estas..!! <br>`);
+         document.getElementById("resultado").innerHTML += `Hola ${nombre}, como estas..!! <br>`;
       }
-      saludar("Fredy")
-      saludar("Maria")
+
+      saludar("Andres")  // Hola Andres, como estas..!!
+      saludar("Lucas")  // Hola Lucas, como estas..!!
 
    </script>
 </body>

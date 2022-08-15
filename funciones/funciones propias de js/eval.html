@@ -9,16 +9,19 @@
 
     <h2>Cree una función que tome una ecuación (p . Ej. "1+1") Y devuelva la respuesta</h2>
 
-    <li>La función <b style="color:red;">eval()</b> evalúa el código JavaScript representado como una cadena.</p>
-    <li>equation("1+1") ➞ 2</p>
-    <li>equation("7*4-2") ➞ 26</p>
-    <li>equation("1+1+1+1+1") ➞ 5</p>
+    <li>La función <b style="color:red;">eval()</b> evalúa el código JavaScript representado como una cadena.</li>
+    <li>equation("1+1") ➞ 2</li>
+    <li>equation("7*4-2") ➞ 26</li>
+    <li>equation("1+1+1+1+1") ➞ 5</li>
     
+    <h2>Respuesta:</h2>
+    <h2 id="resultado" style="font-family:Arial, Helvetica, sans-serif; color:crimson"></h2>
 
     <script>
         
         function equation(s) {
-            return console.log(eval(s));
+            // return console.log(eval(s));
+            return document.getElementById("resultado").innerHTML += `La operación ${s} es: ${eval(s)}<br>`
         }
 
         equation("1+1")         // 2

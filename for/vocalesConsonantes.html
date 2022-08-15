@@ -12,8 +12,9 @@
 
 <body>
 
-  <h2 class="m-3">Solicitar al usuario una palabra y mostrar por consola el número de consonantes, vocales y longitud de
-    la palabra.</h2>
+  <h2 class="m-3">Solicitar al usuario una palabra y mostrar por consola el número de consonantes, vocales y longitud de la palabra.</h2>
+
+  <h2 id="respuesta" class="m-3 text-danger"></h2>
 
   <script>
 
@@ -27,7 +28,8 @@
       else consonantes++
     }
 
-    console.log(`La palabra "${palabra}" tiene ${vocales} vocales, ${consonantes} consonantes y tiene un total de ${palabra.length} letras.`);
+    // console.log(`La palabra "${palabra}" tiene ${vocales} vocales, ${consonantes} consonantes y tiene un total de ${palabra.length} letras.`);
+    document.getElementById("respuesta").innerHTML = `La palabra "${palabra}" tiene ${vocales} vocales, ${consonantes} consonantes y tiene un total de ${palabra.length} letras.`
 
   </script>
 

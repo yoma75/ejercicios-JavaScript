@@ -13,6 +13,8 @@
     const nums = [1, 23, 5, 8, 40, 12, 2, 67, 24, 9, 39]
   </p>
 
+  <h2 id="respuesta"></h2>
+
 
   <script>
 
@@ -20,7 +22,8 @@
 
     nums.forEach(element => {
       if (element > 10) {
-        console.log(element);
+        // console.log(element);
+        document.getElementById("respuesta").innerHTML += `${element}<br>`;
       }
     });
 

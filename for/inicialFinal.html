@@ -17,6 +17,8 @@
   <p>9</p>
   <p>10</p>
 
+  <h2>Respuesta:</h2>
+  <h2 id="resultado"></h2>
 
   <script>
 
@@ -24,7 +26,7 @@
     let num2 = parseInt(prompt('Digite número final: '))
 
     for (let x = num1; x < num2+1; x++) {
-      console.log(x);      
+      document.getElementById("resultado").innerHTML += `${x}<br>`;    
     }
 
   </script>

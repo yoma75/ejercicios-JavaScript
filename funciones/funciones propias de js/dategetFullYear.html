@@ -13,14 +13,16 @@
 
   <h3>pida al usuario su año de nacimiento e imprima su edad actual en la consola con la frase "Tienes X años". Por ejemplo, asumiendo que el año actual es 2020 y el usuario ingresa 2000, el programa debe imprimir en la consola: Tienes 20 años</h3>
 
+  <h2 id="respuesta" style="color:crimson"></h2>
+
 
   <script>
     // Date().getFullYear(): consigue el año actual
-
     const birthYear = parseInt(prompt('Cual es su año de nacimiento: '))
     const yearActual = new Date().getFullYear()
 
-    console.log(`Usted tiene ${yearActual - birthYear} años`);
+    // console.log(`Usted tiene ${yearActual - birthYear} años`);
+    document.getElementById("respuesta").innerHTML = `Usted tiene ${yearActual - birthYear} años`;
 
   </script>
   

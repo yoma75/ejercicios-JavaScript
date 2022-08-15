@@ -13,6 +13,8 @@
     const nums = [1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1]
   </h2>
 
+  <h1 id="result"></h1>
+
   <script>
 
     let count = 0
@@ -23,9 +25,9 @@
       if (e == 1) {
         count ++
       }
-    });
+    });    
     
-    console.log(count);
+    document.getElementById("result").innerHTML = (`La cantidad de números 1 es: ${count} veces`);
 
   </script>
   

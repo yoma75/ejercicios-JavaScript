@@ -12,14 +12,16 @@
 
 <body>
 
-  <h2 class="m-3">Solicita un número e imprime todos los números pares e impares desde 1 hasta ese número con el mensaje
+  <h4 class="m-3">Solicita un número e imprime todos los números pares e impares desde 1 hasta ese número con el mensaje
     "es par" o "es impar"
     <li>1 - impar</p>
     <li>2 - par</p>
     <li>3 - impar</p>
     <li>4 - par</p>
     <li>5 - impar</p>
-  </h2>
+  </h4>
+
+  <p id="resultado" class="ml-3"></p>
 
   <script>
 
@@ -27,8 +29,8 @@
 
     for (let i = 1; i <= numero; i++) {
       let mensaje = (i % 2 == 0) ? `${i} - par`:`${i} - impar`
-        console.log(mensaje);
-      }       
+      document.getElementById("resultado").innerHTML += (`${mensaje}<br>`)
+    }       
 
   </script>
 
