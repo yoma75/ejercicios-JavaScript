@@ -1,0 +1,36 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Objeto usuario</title>
+
+<h2 id="nombre"></h2>
+<h2 id="ciudad"></h2>
+
+<script>
+
+  const user = {
+    name: 'Fredy',
+    lastName: 'Colorado',
+    age: 46,
+    
+    adress: {
+      country: 'Colombia',
+      city: 'Bogota',
+      street: 'calle 234'
+    },
+
+    friends: ['Pedro', 'Maria'],
+    active: true,
+    
+    sendMail() {
+      return 'Enviando correo...'
+    }
+  }
+
+  console.log(user);
+  console.log(user.name);
+  console.log(user.adress.city);
+  console.log(user.sendMail());
+  
+  document.getElementById('nombre').innerHTML = `Mi nombre es: ${user.name}`
+  document.getElementById('ciudad').innerHTML = `Ciudad: ${user.adress.city}`
+
+</script>

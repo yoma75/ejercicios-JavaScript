@@ -1,0 +1,19 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Funcion filter</title>
+
+ <h2>filter: permite crear un nuevo arreglo con elementos que hayamos filtrado, osea con elementos que cumplan una condición.</h2> 
+
+
+<script>
+
+  const animals = ['dog', 'elephant', 'cat', 'horse', 'bird'];
+
+  const newAnimals = animals.filter(a => {
+    if(a !== 'elephant') {
+      return a
+    }
+  })
+
+  console.log(newAnimals);  // ['dog', 'cat', 'horse', 'bird']
+
+</script>
