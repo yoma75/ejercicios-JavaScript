@@ -1,0 +1,45 @@
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Metodo find</title>
+
+<h2>find: permite encontrar un valor, si el valor se repite varias veces solo captura la primera coincidencia, a diferencia de filter.</h2>
+
+<script>
+
+  const students = [
+    {
+      name: "Andres",
+      lastname: "Perez",
+      age: 24,
+      course: "Marketing",
+    },
+    {
+      name: "Oscar",
+      lastname: "Nieto",
+      age: 22,
+      course: "Web Development",
+    },
+    {
+      name: "Karmen",
+      lastname: "Cortes",
+      age: 20,
+      course: "Accounting",
+    },
+    {
+      name: "Roberto",
+      lastname: "Katz",
+      age: 23,
+      course: "Web Development",
+    },
+    {
+      name: "Pedro",
+      lastname: "Mejia",
+      age: 18,
+      course: "Financial Management",
+    },
+  ];
+
+
+  console.log(students.find(estudiante => estudiante.name === 'Karmen'))
+  // {name: 'Karmen', lastname: 'Cortes', age: 20, course: 'Accounting'}
+
+</script>

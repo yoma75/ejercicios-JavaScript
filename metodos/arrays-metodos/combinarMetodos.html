@@ -1,0 +1,52 @@
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Combinar metodos</title>
+
+<h2>Combinar metodos:</h2>
+
+<script>
+
+  const students = [
+    {
+      name: "Andres",
+      lastname: "Perez",
+      age: 24,
+      course: "Marketing",
+    },
+    {
+      name: "Oscar",
+      lastname: "Nieto",
+      age: 22,
+      course: "Web Development",
+    },
+    {
+      name: "Karmen",
+      lastname: "Cortes",
+      age: 20,
+      course: "Accounting",
+    },
+    {
+      name: "Roberto",
+      lastname: "Katz",
+      age: 23,
+      course: "Web Development",
+    },
+    {
+      name: "Pedro",
+      lastname: "Mejia",
+      age: 18,
+      course: "Financial Management",
+    },
+  ];
+
+   
+  const resultado = students.map(({name, lastname, age}) => ({
+    estudiante: `${name} ${lastname}`,
+    age
+  }))
+    .filter(estudiante => estudiante.age > 20)
+    .sort((a,b) => b.age - a.age)
+    .reduce((total, estudiante) => total + estudiante.age, 0)
+  
+    console.log(resultado);  // 69
+
+</script>

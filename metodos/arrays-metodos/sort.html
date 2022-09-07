@@ -1,0 +1,54 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Funcion Sort</title>
+
+<h2>Sort: ordena elementos de forma ascendente o descendente</h2>
+
+
+<script>
+  const students = [
+  {
+    name: "Andres",
+    lastname: "Perez",
+    age: 24,
+    course: "Marketing",
+  },
+  {
+    name: "Oscar",
+    lastname: "Nieto",
+    age: 22,
+    course: "Web Development",
+  },
+  {
+    name: "Karmen",
+    lastname: "Cortes",
+    age: 20,
+    course: "Accounting",
+  },
+  {
+    name: "Roberto",
+    lastname: "Katz",
+    age: 23,
+    course: "Web Development",
+  },
+  {
+    name: "Pedro",
+    lastname: "Mejia",
+    age: 18,
+    course: "Financial Management",
+  },
+];
+
+
+const ordenados = students.sort((a,b) => a.age > b.age ? 1 : -1)
+
+console.log(ordenados);
+// {name: 'Pedro', lastname: 'Mejia', age: 18, course: 'Financial Management'}
+// {name: 'Karmen', lastname: 'Cortes', age: 20, course: 'Accounting'} 
+// {name: 'Oscar', lastname: 'Nieto', age: 22, course: 'Web Development'} 
+// {name: 'Roberto', lastname: 'Katz', age: 23, course: 'Web Development'} 
+// {name: 'Andres', lastname: 'Perez', age: 24, course: 'Marketing'}
+
+</script>
+
+
+
