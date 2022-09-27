@@ -16,13 +16,18 @@
     console.log(capitalizar(prompt("Ingrese una frase: ").trim()));
 
     function capitalizar(frase) {
-      frase = (frase.split(" ")
+      frase = (frase.split(" ")  // ['este', 'es', 'un', 'ejemplo']
       .filter(elemento => elemento != '')
       .map(elemento => elemento.replace(elemento[0], elemento[0].toLocaleUpperCase()))
       .join(" "));
 
       return frase;
     };    
+
+    // split(): separación de una cadena tipo string en subcadenas.
+    // filter(): crea un nuevo array con todos los elementos que cumplan la condición
+    // map(): transforma todos los elementos del array y devuelve un nuevo array segun la funcion declarada.
+    // join(): une todos los elementos de una matriz en una cadena y devuelve esta cadena
 
   </script>
 

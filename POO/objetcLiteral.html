@@ -1,0 +1,52 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Objeto literal</title>
+
+<h2>Objeto literal: sirve para agrupar distintos datos que le pertenecen a una misma identidad y nombrarlos.</h2>
+
+<h2>Propiedades: clave:valor</h2>
+<h2>Metodos: son acciones = funciones</h2>
+
+<script>
+
+  function showFullName() {
+    return `${user.name} ${user.lastname}`
+  }
+  
+
+  const user = {
+    name: 'Fredy',
+    lastname: 'Colorado',
+    age: 46,
+    hobbies: ['read','programing','cook'],
+    adress: {
+      street: 'Calle two',
+      city: 'Bogota'
+    }
+  }
+
+  console.log(user);
+  console.log(showFullName());
+
+  // ------------------------------------------------
+
+  const account = {
+    number: 4986437,
+    amount: 100,
+    deposit(quantity) {
+      this.amount = this.amount + quantity
+    },
+    witdraw(quantity) {
+      this.amount = this.amount - quantity
+    }
+  }
+
+  account.deposit(50)  
+  account.deposit(150)  
+  account.deposit(40)  
+
+  account.witdraw(40)  // - 210
+
+  console.log(account.amount);  // 340
+  console.log(account.witdraw);  // 340 - 40 = 300
+
+</script>

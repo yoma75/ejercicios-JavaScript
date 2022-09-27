@@ -17,9 +17,8 @@ for (let index = 0; index < nombres.length; index++) {
   for (let index2 = 0; index2 < nombresitos.length; index2++) {
     const name = nombresitos[index2];
     console.log('  ', name);    
-  }    
-  
-  }
+  }   
+}
   
   // GRUPO 1
   //    Pablo
