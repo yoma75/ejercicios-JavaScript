@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contar asteriscos</title>
+</head>
+
+<body>
+
+  <p>
+    Cuenta los asteriscos
+    Escribe una función llamada asteriscos que reciba un string str y retorne el número de asteriscos que hay en str.
+  </p>
+
+  ​ <p>asteriscos("H*o*l*a") // retorna 3</p>
+  <p>asteriscos("Hola") // retorna 0</p>
+
+
+  <script>
+
+
+    function asteriscos(str) {      
+      let contador = 0;
+      
+      for (let x of str) {
+        if (x === '*')
+          contador++;
+        }
+      return contador;
+    }
+
+
+    console.log(asteriscos("H*o*l*a")) // retorna 3
+    console.log(asteriscos("Hola"))  // retorna 0
+
+  </script>
+
+</body>
+
+</html>

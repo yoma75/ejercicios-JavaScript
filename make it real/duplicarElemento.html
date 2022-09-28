@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duplicar elemento</title>
+</head>
+<body>
+
+
+  <p>
+    Duplica cada elemento
+    Escribe una función llamada duplicar que reciba un arreglo de números como parámetro y retorne un nuevo arreglo con cada elemento duplicado (multiplicado por dos).
+  </p>​
+
+
+  <p>duplicar([3, 12, 45, 7]) // retorna [6, 24, 90, 14]</p>
+  <p>duplicar([8, 5]) // retorna [16, 10]</p>
+
+
+  <script>
+
+    // let newArray = []
+    
+    // function duplicar(arrayNum) {
+    //   for(numero of arrayNum) {
+    //     x = numero * 2
+    //     newArray.push(x)
+    //   }
+    //   return console.log(newArray)
+    // }
+
+    // duplicar([3, 12, 45, 7]) // retorna [6, 24, 90, 14]
+    // duplicar([8, 5]) // retorna [16, 10]
+
+    // --------------------------------------------------------------
+
+    function duplicar(arrayNum) {
+      let x = arrayNum.map((e) => e * 2)
+      return x
+    }
+
+    console.log(duplicar([3, 12, 45, 7])); // retorna [6, 24, 90, 14]
+    console.log(duplicar([8, 5])); // retorna [16, 10]
+
+  </script>
+  
+</body>
+</html>

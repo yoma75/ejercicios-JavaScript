@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcular impuesto</title>
+</head>
+<body>
+
+  <p>
+    Calcula los impuestos
+    Escribe una función llamada calcularImpuestos que reciba dos argumentos numéricos: edad e ingresos. Si edad es igual o mayor a 18 y los ingresos son iguales o mayores a 1000 debe retornar ingresos * 40%. De lo contrario retorna 0.
+  </p>
+
+  <p>calcularImpuestos(18, 1000) // retorna 400</p>
+  <p>calcularImpuestos(40, 10000) // retorna 4000</p>
+  <p>calcularImpuestos(17, 5000) // retorna 0</p>
+
+
+  <script>
+
+    function calcularImpuestos(edad, ingresos) {
+      if((edad >= 18) && (ingresos >= 1000))
+        return ingresos * 0.4
+      else
+        return 0
+    }
+
+    console.log(calcularImpuestos(18, 1000))  // retorna 400
+    console.log(calcularImpuestos(40, 10000)) // retorna 4000
+    console.log(calcularImpuestos(17, 5000))  // retorna 0
+
+
+  </script>
+  
+</body>
+</html>
