@@ -1,0 +1,19 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+Escribe una función llamada descifrar que reciba un string y un objeto. Utiliza las propiedades del objeto para reemplazar los caracteres de la cadena y retorna el resultado:
+
+<script>
+
+  function descifrar(palabra, array) {
+
+    for(let x in array) {
+      palabra = palabra.replace(x, array[x])
+    }
+    return palabra
+  }
+  
+  console.log(descifrar("h0l4", { 0: "o", 4: "a" })); // "hola"
+  console.log(descifrar("pyrmizo", { y: "e", z: "s" })); // "permiso"
+  console.log(descifrar("igual", { h: "n" })); // "igual"
+
+</script>

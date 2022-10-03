@@ -17,7 +17,6 @@
 
     function capitalizar(frase) {
       frase = (frase.split(" ")  // ['este', 'es', 'un', 'ejemplo']
-      .filter(elemento => elemento != '')
       .map(elemento => elemento.replace(elemento[0], elemento[0].toLocaleUpperCase()))
       .join(" "));
 

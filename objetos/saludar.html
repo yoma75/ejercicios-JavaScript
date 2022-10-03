@@ -25,6 +25,11 @@
 
   <script>
 
+    const pedro = { nombre: "Pedro", edad: 23 };      
+    const maria = { nombre: "Maria", edad: 35 };      
+    const juan = { nombre: "Juan" };
+    
+    
     function saludar(persona) {  // recibe un objeto que representa una persona
 
       if (persona.edad) {
@@ -34,9 +39,6 @@
       }        
     }
 
-    const pedro = { nombre: "Pedro", edad: 23 };      
-    const maria = { nombre: "Maria", edad: 35 };      
-    const juan = { nombre: "Juan" };
       
     saludar(pedro);  // "Hola Pedro, tienes 23 años"
     saludar(maria);  // "Hola Maria, tienes 35 años"

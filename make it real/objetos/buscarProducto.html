@@ -1,0 +1,30 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<script>
+
+let productos = [
+      { id: 1, nombre: "A" },
+      { id: 2, nombre: "B" },
+    ];
+    
+    productos = [
+      { id: 1, nombre: "A" },
+      { id: 2, nombre: "B" },
+    ];
+
+
+function buscarProducto(array, numero) {
+
+  for(let x in productos) {
+    if(productos[x].id === numero) {
+      return `id: ${productos[x].id}, nombre: ${productos[x].nombre}`
+    } else {
+        return null
+    }
+  }
+}
+
+console.log(buscarProducto(productos, 1));    // { id: 1, nombre: "A" }
+console.log(buscarProducto(productos, 566));  // null
+
+</script>

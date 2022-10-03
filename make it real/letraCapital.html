@@ -1,0 +1,21 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+
+<script>
+
+  function capitalizar(frase) {
+    frase = frase.split(" ") // ['pedro', 'perez']
+    .map(e => e.replace(frase[0], frase[0].toLocaleUpperCase()))
+    .join(" ");
+
+    return frase
+  }
+
+  // split(): separación de una cadena tipo string en subcadenas.  
+  // map(): transforma todos los elementos del array y devuelve un nuevo array segun la funcion declarada.
+  // join(): une todos los elementos de una matriz en una cadena y devuelve esta cadena
+
+  console.log(capitalizar("pedro perez")) // "Pedro Perez"
+  console.log(capitalizar("make it real")) // "Make it Real"
+
+</script>

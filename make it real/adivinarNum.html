@@ -1,0 +1,19 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+
+<script>
+
+  
+  function adivinarNumero() {
+    let numUser = parseInt(prompt('Digite un número: '))
+    let numAleatorio = Math.floor((Math.random() * 10) + 1)
+
+    if(numAleatorio === numUser) 
+      return console.log(`Ese era el numero ${numAleatorio}`)
+    else 
+      return console.log(`Numero equivocado, era ${numAleatorio}`)
+  }
+
+  adivinarNumero();
+
+</script>

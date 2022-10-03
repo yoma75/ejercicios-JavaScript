@@ -1,0 +1,29 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+La función calcularColor recibe un número como argumento y retorna un string de acuerdo al número:
+
+Si el número es 1 retorna "El color es negro".
+Si el número es 2 retorna "El color es blanco".
+Si el número es 3 retorna "El color es azul".
+De lo contrario retorna "El color es verde".
+El problema es que la función tiene algunos errores y no está funcionando. Tu misión es corregirla para que funcione
+correctamente según lo anterior.
+
+<script>
+
+  function calcularColor(numero) {
+    let color;
+    if (numero == 1) color = 'negro'
+    else if(numero == 2) color = 'blanco'
+    else if(numero == 3) color = 'azul'
+    else color = 'verde'
+
+    return `El color es: ${color}`
+  }
+
+  console.log(calcularColor(1)) // "El color es negro"
+  console.log(calcularColor(2)) // "El color es blanco"
+  console.log(calcularColor(3)) // "El color es azul"
+  console.log(calcularColor(8)) // "El color es verde"
+
+</script>

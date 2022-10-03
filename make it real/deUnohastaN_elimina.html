@@ -1,0 +1,27 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+pedir al usuario un número y cree un arreglo de números empezando en el 1 hasta el número que el usuario ingrese (incluyéndolo)
+Elimine el segundo elemento.
+Recorra e imprima el arreglo.
+Ejemplo:
+
+Ingresa un número> 5
+1
+3
+4
+5
+
+<script>
+
+  let numeros = [];
+
+  let numUser = parseInt(prompt('Digite un número: '))
+
+  for(let x=1; x<=numUser; x++) {
+    numeros.push(x)
+  }
+  
+  numeros.splice(1,1);   // inicia en el indice 1 y elimina 1 elemento
+  console.log(numeros);
+
+</script>

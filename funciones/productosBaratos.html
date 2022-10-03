@@ -24,6 +24,14 @@
 
     const nuevoArray = []
 
+    let prods = [
+      { nombre: "Arroz", precio: 5 },
+      { nombre: "Pan", precio: 3 },
+      { nombre: "Tomate", precio: 8 },
+      { nombre: "Leche", precio: 15 }
+    ];
+
+
     function productosBaratos(productos) {
       productos.map(e => {
         if ((e.precio >= 5) && (e.precio < 10)) {
@@ -32,13 +40,6 @@
       })
       return nuevoArray
     }
-
-    let prods = [
-      { nombre: "Arroz", precio: 5 },
-      { nombre: "Pan", precio: 3 },
-      { nombre: "Tomate", precio: 8 },
-      { nombre: "Leche", precio: 15 }
-    ];
 
     console.log(productosBaratos(prods));  // ['Arroz', 'Tomate']
 

@@ -1,0 +1,21 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+
+<script>
+
+  const pedro = { nombre: "Pedro", edad: 23 };
+  const maria = { nombre: "Maria", edad: 35 };
+  const juan = { nombre: "Juan" };
+
+  function saludar(persona) {
+    if (persona.edad)
+      return `Hola ${persona.nombre}, tienes ${persona.edad} años`
+    else
+      return `Hola ${persona.nombre}`
+  }
+
+  console.log(saludar(pedro)); // "Hola Pedro, tienes 23 años"
+  console.log(saludar(maria)); // "Hola Maria, tienes 35 años"
+  console.log(saludar(juan)); // "Hola Juan"
+
+</script>

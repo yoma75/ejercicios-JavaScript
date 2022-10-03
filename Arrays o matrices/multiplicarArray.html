@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Multiplicar elementos array</title>
 </head>
+
 <body>
 
   <h3 style="font-family: Arial, Helvetica, sans-serif;">
     Multiplicar cada uno de los elementos de un array
   </h3>
-
-  <script src="../js/multiplicarArray.js"></script>
   
+
+  <script>
+
+    let numeros = [1, 2, 3, 4, 5];
+    let multiplicar = 1;
+
+    for (let x = 0; x < numeros.length; x++) {
+      multiplicar *= numeros[x];
+    }
+
+    console.log(`Elementos del array: ${numeros}`);
+    console.log(multiplicar);  // 1*2*3*4*5 = 120
+
+  </script>
+
 </body>
 </html>

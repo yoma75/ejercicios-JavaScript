@@ -1,0 +1,17 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+
+Escribe una función llamada posPares que reciba un arreglo y retorne un nuevo arreglo con los valores en las posiciones pares del arreglo que llega como argumento.
+
+
+<script>
+
+  function posPares(arreglo) {
+    return arreglo.filter((valor,indice) => indice % 2 === 0) 
+  }
+
+  console.log(posPares(["a", "b", "c"])) // ["a", "c"]
+  console.log(posPares([0, 1, 2, 3, 4])) // [0, 2, 4]
+  console.log(posPares([])) // []
+
+</script>

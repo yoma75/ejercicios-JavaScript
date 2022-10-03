@@ -1,0 +1,26 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Ingresar numeros en un array con while</title>
+
+
+<script>
+
+  let array = []
+  let repetidos = []
+    
+    let x = 0
+    let cantidadNum = parseInt(prompt('Cuantos numeros desea ingresar: '))
+    
+    while(x < cantidadNum) {
+      let numeros = parseInt(prompt('Digite el número: '))
+      array.push(numeros);
+      x++;
+    }
+
+    let pares = array.filter(e => e % 2 === 0)
+    let impares = array.filter(e => e % 2 === 1)
+
+    console.log(array);
+    console.log(`Los pares son: ${pares}`);
+    console.log(`Los impares son: ${impares}`);
+
+</script>

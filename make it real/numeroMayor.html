@@ -1,0 +1,19 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<script>
+
+  function numMayor(arrayNumeros) {
+    let auxiliar = 0;
+
+    arrayNumeros.forEach(element => {
+      if(element > auxiliar ) {
+        auxiliar = element
+      }
+    });
+    return auxiliar
+  }
+
+  console.log(numMayor([1,2,3,4]));         // 4
+  console.log(numMayor([63,85,39,24,3]));  // 85
+
+</script>
