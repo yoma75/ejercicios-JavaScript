@@ -14,37 +14,21 @@
 
   <script>
 
-    // 19 ejemplo
+    function saludar(hour) {          
+      
+      if ((hour >= 0) && (hour <= 11)) {
+        return 'Buenos dias';
+      } else if ((hour >= 12) && (hour <= 18)) {
+          return'Buenas tardes';
+      } else {
+        return 'Buenas noches';
+      }
+    }
 
-    // const num = parseInt(prompt("Ingrese un número:"));
-    // let array = []
+    console.log(saludar(5));   // Buenos dias
+    console.log(saludar(14));  // Buenas tardes
+    console.log(saludar(20));  // Buenas noches
 
-    // for (let i = 1; i <= num; i++) {
-    //   array.push(i)
-    // }
-
-    // array.splice(1, 1);
-
-    // for (let i = 0; i < array.length; i++) {
-    //   console.log(array[i]);
-    // }
-
-
-    // let iterable = new Map([["a", 1], ["b", 2], ["c", 3]]);
-
-    // for (let entry of iterable) {
-    //   console.log(entry);
-    // }
-    // // ['a', 1]
-    // // ['b', 2]
-    // // ['c', 3]
-
-    // for (let [key, value] of iterable) {
-    //   console.log(value);  // 1 2 3 
-    // }
-
-    
-    
 
 
   </script>

@@ -1,0 +1,22 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<h2>PROXIMO EN LA FILA</h2>
+<p>Definir una funcion proximoEnLaFila que tome un arreglo (arreglo) y un numero (elemento) como argumentos. Agrega el numero al final del arreglo y luego elimina el primer elemento del arreglo. La funcion proximoEnLaFila debe de retornar el elemento que fue removido.</p>
+
+
+<script>
+
+  function proximoEnLaFila(arreglo, elemento) {
+    arreglo.push(elemento);  // agregar al final del arreglo
+    return arreglo.shift();  // Remover el primer elemento
+  }
+
+  var miArreglo = [1,2,3,4,5];
+
+  console.log(`Antes ${JSON.stringify(miArreglo)}`);
+
+  console.log(`Eliminado: ${proximoEnLaFila(miArreglo, 34)}`);
+  
+  console.log(`Despues: ${JSON.stringify(miArreglo)}`);
+
+</script>
