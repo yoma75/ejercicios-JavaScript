@@ -1,0 +1,85 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<style>
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+</style>
+
+<p>En el juego de casino BlackJack el jugador puede sacarle ventaja a la casa llevando un registro del numero relativo de cartas altas y bajas que quedan en la baraja.</p>
+<p>Esto se llama: conteo de cartas</p>
+<p>Tener mas cartas altas en la baraja es una ventaja para el jugador. Se le asigna eun valor a cada carta de acuerdo a la siguiente tabla.</p>
+
+<ul>
+  <li>Cuando el conteo es positivo, el jugador deberia apostar alto.</li>
+  <li>Cuando el conteo es 0 o negativo, el jugador deberia apostar bajo.</li>
+</ul>
+
+<br>
+
+<h3>Tabla:</h3>
+<ul>
+  <li>cambio del conteo: +1</li>
+  <li>cartas: 2, 3, 4, 5, 6</li>
+  <br>
+  <li>cambio del conteo: 0</li>
+  <li>cartas: 7, 8, 9</li>
+  <br>
+  <li>cambio del conteo: -1</li>
+  <li>cartas: 10, 'J', 'Q', 'K', 'A'</li>
+  <br>
+</ul>
+
+<p>Realizar una funcion para contar las cartas</p>
+<p>La funcion debe tomar un parametro carta que puede ser un numero o una cadena de caractres y luego aumentar o reducir el valor de la variable global conteo de acuerdo al valor de la carta de acuerdo a la tabla.</p>
+
+<p>La funcion debe retornar una cadena de caracteres con el conteo actual y la cadena:</p>
+<ul>
+  <li>"Apostar" si el conteo es positivo.</li>
+  <li>"Esperar" si el conteo es cero o negativo.</li>
+</ul>
+
+<p>El conteo actual y la desicion del jugador, ("Apostar" o "Esperar") deben estar separados por un espacio.</p>
+
+
+<script>
+
+  var conteo = 0;
+
+  function contarCartas(carta) {
+    var decision;
+
+    switch(carta) {
+      case 2:
+      case 3:
+      case 4:
+      case 5:
+      case 6:
+        conteo++;
+        break;
+      
+      case 10:
+      case 'J':
+      case 'Q':
+      case 'K':
+      case 'A':
+        conteo--;
+        break;      
+    }
+
+    if(conteo > 0) {
+      decision = "Apostar";
+    } else {
+      decision = "Esperar";
+    }
+
+    return `${conteo} ${decision}`;
+  }
+
+  console.log(contarCartas(2));  // 1 Apostar
+  console.log(contarCartas(3));  // 2 Apostar
+  console.log(contarCartas(7));  // 2 Apostar
+  console.log(contarCartas('K'));  // 1 Apostar
+  console.log(contarCartas('A'));  // 0 Esperar
+
+</script>

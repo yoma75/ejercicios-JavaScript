@@ -1,0 +1,32 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<script>
+
+  function seleccionarIdioma(valor) {
+    var idioma;
+
+    switch (valor) {
+      case 1:
+        idioma = "Español";        
+        break;
+      
+      case 2:
+        idioma = "Frances";
+        break;
+      
+      case 3: 
+        idioma = "Italiano";
+        break;
+    
+      default:
+        idioma = "Ingles";
+        break;
+    }
+
+    return idioma;
+  }
+
+  console.log(seleccionarIdioma(3));  // Italiano
+  console.log(seleccionarIdioma(5));  // Ingles
+
+</script>
