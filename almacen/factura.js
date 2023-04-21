@@ -1,22 +1,36 @@
-function multiplicar() {
-    let numero1 = parseInt($('#numero1').val());
-    let numero2 = parseInt($('#numero2').val());
-    let multiplicar = numero1 * numero2;
-    $('#subtotal').text(multiplicar);
-}        
+// function multiplicar() {
+//     var num1 = document.getElementById("numero1").value;
+//     var num2 = document.getElementById("numero2").value;
+//     var resultado = num1 * num2;
+//     document.getElementById("subtotal").innerHTML = resultado;
+//   }
+  
+//   function ivaa() {
+//     var num1 = document.getElementById("numero1").value;
+//     var num2 = document.getElementById("numero2").value;
+//     var subtotal = num1 * num2;
+//     var iva = subtotal * 0.19;
+//     document.getElementById("iva").innerHTML = iva;
+//   }
+  
+//   function totalPagar() {
+//     var num1 = document.getElementById("numero1").value;
+//     var num2 = document.getElementById("numero2").value;
+//     var subtotal = num1 * num2;
+//     var iva = subtotal * 0.19;
+//     var total = subtotal + iva;
+//     document.getElementById("total").innerHTML = total;
+//   }
+  
 
-function ivaa() {
-    let numero1 = parseInt($('#numero1').val());
-    let numero2 = parseInt($('#numero2').val());
-    let iva = ((numero1 * numero2) * 19) / 100;            
-    $('#iva').text(iva);
-}       
+function calcular() {
+  var num1 = document.getElementById("numero1").value;
+  var num2 = document.getElementById("numero2").value;
+  var subtotal = num1 * num2;
+  var iva = subtotal * 0.19;
+  var total = subtotal + iva;
 
-function totalPagar() {
-    let numero1 = parseInt($('#numero1').val());
-    let numero2 = parseInt($('#numero2').val());
-    let multiplicar = numero1 * numero2;
-    let iva = ((numero1 * numero2) * 19) / 100; 
-    let totalPagar = iva + multiplicar;
-    $('#total').text(totalPagar);
+  document.getElementById("subtotal").innerHTML = subtotal;
+  document.getElementById("iva").innerHTML = iva;
+  document.getElementById("total").innerHTML = total;
 }
