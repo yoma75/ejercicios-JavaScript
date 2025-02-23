@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>De objetos a strings</title>
+</head>
+
+<body>
+
+  <h2>Transforma un array de objetos a un array de strings</h2>
+
+  <script>
+
+    function getNames(array) {
+      return array.map(person => person.name);
+    }
+
+    const personas = [
+      {
+        name: 'Nicolas',
+        lastName: 'Molina',
+        age: 28
+      },
+      {
+        name: 'Valentina',
+        lastName: 'Molina',
+        age: 19
+      },
+      {
+        name: 'Zulema',
+        lastName: 'Vicente',
+        age: 21
+      }
+    ];
+
+    const nombres = getNames(personas);
+    console.log(nombres);  // ['Nicolas', 'Valentina', 'Zulema']
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agregar propiedad</title>
+</head>
+
+<body>
+
+  <h2>Calcula y agrega una nueva propiedad en un Array</h2>
+
+
+  <script>
+
+    function agregarNuevoAtributo(ejemplo) {
+
+      // Recorrer cada objeto del arreglo con forEach
+      ejemplo.forEach(producto => {
+
+        // Calcular el impuesto (19% del precio)
+        const impuesto = Math.round(producto.precio * 0.19);
+
+        // Agregar la propiedad "impuesto" al objeto
+        producto.impuesto = impuesto;
+      });
+
+      // Devolver el arreglo modificado
+      return ejemplo;
+    }
+
+    // Ejemplo de uso
+    const productos = [
+      { nombre: "Producto 1", precio: 1000, stock: 10 },
+      { nombre: "Producto 2", precio: 2000, stock: 20 }
+    ];
+
+    const resultado = agregarNuevoAtributo(productos);
+
+    // Imprimir el resultado
+    console.log(resultado);
+
+
+  </script>
+
+</body>
+</html>
